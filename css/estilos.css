@@ -1,0 +1,290 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Rufina', serif;
+azul oscuro #023859
+azul claro #2983a6
+amarillo #c6d936
+verde #97a629
+blanco #f2f2f2
+*/
+
+*{
+    margin: 0;
+    border: 0;
+}
+
+/*index*/
+    #cabecera{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        background-color: #023859;
+        width: 100%;
+    }
+    #logo{
+        width: 18%;
+        margin: 16px;
+    }
+    #menu ul{
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+    #menu li{
+        display: inline-block;
+        padding: 15px 0;
+        font-size: 16px;
+    }
+    #menu li a{
+        text-align: center;
+        color: #c6d936;
+        text-decoration: none;
+    }
+    #grillaPrincipal{
+        display: grid;
+        height: 1770px;
+        grid-template-columns: 100%;
+        grid-template-rows: 500px 650px 650px /*500px*/ 200px;
+        grid-template-areas: "main"
+                             "proyectos"
+                             "galeria"/*
+                             "blog"*/
+                             "footer";
+    }
+    .bienvenida{
+        grid-area: main;
+        background-color: #023859;
+    }
+    .bienvenida .img1{
+        background-image: url(../imgs/exoticas.jpeg);
+        background-size: cover;
+        background-position: center;
+        width: 98%;
+        height: 95%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .bienvenida .img1 h1{
+        width: 30%;
+        padding: 10px;
+        color:#c6d936;
+        font-family: 'Raleway', sans-serif;
+        font-size: 32px;
+        text-align: center;
+        background-color: #023859c5;
+    }
+    .bienvenida .img1 p{
+        width: 30%;
+        padding: 10px;
+        color:#c6d936;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        text-align: center;
+        background-color: #023859c5;
+    }
+    .proyectos{
+        grid-area: proyectos;
+        background-color: #2983a6;
+    }
+    .grillaSub1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;   
+    }
+    .art1, .art2, .art3, .art4{
+        width: 20%;
+        height: 585px;
+        margin: 30px 15px;
+        background-color: #023859;
+    }
+    .art1 h2, p, a,
+    .art2 h2, p, a,
+    .art3 h2, p, a,
+    .art4 h2, p, a{
+        font-family: 'Raleway', sans-serif;
+        color: #f2f2f2;
+        text-align: left;
+        padding: 10px;
+    }
+    .img2{
+        background-image: url(../imgs/foto2.jpeg);
+    }
+    .img3{
+        background-image: url(../imgs/foto3.jpeg);
+    }
+    .img4{
+        background-image: url(../imgs/foto4.jpeg);
+    }
+    .img5{
+        background-image: url(../imgs/foto5.jpeg);
+    }
+    .img2, .img3, .img4, .img5{
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+    .galeria{
+        grid-area: galeria;
+        background-color: #c6d936;
+    }
+    .grillaSub2{
+        display: grid;
+        height: 600px;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-rows: 175px 175px 175px;
+        grid-template-areas: "foto1 foto1 foto2 foto3"
+                             "foto1 foto1 foto4 foto4"
+                             "foto5 foto6 foto4 foto4";
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    .cuadro1{
+        grid-area: foto1;
+        background-image: url(../imgs/foto1.jpeg);
+    }
+    .cuadro2{
+        grid-area: foto2;
+        background-image: url(../imgs/foto2.jpeg);
+    }
+    .cuadro3{
+        grid-area: foto3;
+        background-image: url(../imgs/foto3.jpeg);
+    }
+    .cuadro4{
+        grid-area: foto4;
+        background-image: url(../imgs/foto4.jpeg);
+    }
+    .cuadro5{
+        grid-area: foto5;
+        background-image: url(../imgs/foto5.jpeg);
+    }
+    .cuadro6{
+        grid-area: foto6;
+        background-image: url(../imgs/foto6.jpeg);
+    }
+    .cuadro1, .cuadro2, .cuadro3, .cuadro4, .cuadro5, .cuadro6{
+        background-size: cover;
+    }
+    
+
+    footer{
+        grid-area: footer;
+        background-image: linear-gradient(to bottom, #023859 , #2983a6);
+    }
+    .contacto{
+        width: 300px;
+        height: 150px;
+        margin: 20px 70px;
+    }
+    .contacto h2, a, p{
+        font-family: 'Montserrat', sans-serif;
+        color: #f2f2f2;
+        padding: 20px;
+        text-align: left;
+    }
+
+
+/*proyectos*/
+    .proyectos{
+        background-color: #2983a6;
+    }
+
+
+/*galeria*/
+    .galeria{
+        background-color: #c6d936;
+    }
+    #fotos{
+        width: 95%;
+        margin: auto;
+        padding: 10px;
+        display: grid;
+        grid-template-areas: "foto1 foto2"
+                            "foto3 foto7"
+                            "foto4 foto7"
+                            "foto5 foto6";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 400px 400px 400px 400px;
+        grid-gap: 10px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+    .foto1{
+        grid-area: foto1;
+    }
+    .foto2{
+        grid-area: foto2;
+    }
+    .foto3{
+        grid-area: foto3;
+    }
+    .foto4{
+        grid-area: foto4;
+    }
+    .foto5{
+        grid-area: foto5;
+    }
+    .foto6{
+        grid-area: foto6;
+    }
+    .foto7{
+        grid-area: foto7;
+    }
+
+
+/*blog*/
+    .blog{
+        background-color: #97a629;
+    }
+    #entradas{
+        background-color: #023859;
+        margin: 30px;
+        padding: 20px;
+    }
+    #entradas h2{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+    #entradas .mes{
+        padding: 15px;
+        color: whitesmoke;
+        font-family: 'Lato', sans-serif;
+    }
+    #entradas .mes li{
+        color: #97a629;
+        line-height: 24px;
+    }
+    #entradas .mes .mes__porMes li{
+        color: #2983a6;
+        line-height: 20px;
+    }
+
+
+/*contacto*/
+    .contacto2{
+        background-color: #023859;
+    }
+    #cont{
+        background-color: #2983a6;
+        height: 350px;
+        margin: 10px 30px;
+        padding: 20px 30px;
+        color: #023859;
+        font-family: 'Lato', sans-serif;
+        font-size: larger;
+        line-height: 24px;
+        position: absolute;
+    }
+    #cont .titulo{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        text-decoration: underline;
+    }
