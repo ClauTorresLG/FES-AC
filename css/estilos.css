@@ -13,11 +13,10 @@ blanco #f2f2f2
     margin: 0;
     border: 0;
 }
-body{
-    background-color: #023859;
-}
+
 /*index*/
-    #header1{
+
+    header{
         height: 550px;
         width: 92%;
         margin: 0 4%;
@@ -26,25 +25,11 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
     }
-    #header1 .cabecera{
-        background-color: #0238598c;
-        height: 130px;
-        width: 100%;
+    .navbar{
+        position: relative;
     }
-    #header1 .cabecera .logo{
-        width: 20%;
-        float: left;
-        padding: 20px 40px;
-    }
-    #header1 .cabecera .menu ul{
-        list-style: none;
-        background-color: #0238598c;
-    }
-    #header1 .cabecera .menu li{
-        padding: 80px 50px;
-        float: left;
-    }
-    #header1 .cabecera .menu li a{
+    
+    .nav-item a{
         text-align: center;
         color: #c6d936;
         text-decoration: none;
@@ -52,30 +37,36 @@ body{
         font-weight: bolder;
         font-size: larger;
     }
-    #header1 .txt h1{
+    .nav-item a :hover{
+        color: #2983a6;
+    }
+    .txt h1{
         width: 30%;
-        padding: 200px 60px 0;
+        padding: 250px 100px 0;
         display: inline-block;
+        position: relative;
         color:#c6d936;
         font-family: 'Raleway', sans-serif;
         font-size: 62px;
         text-align: left;
     }
-    #header1 .txt a{
-        width: 30%;
-        padding: 300px 40px 0;
+    .txt a{
+        width: 50%;
+        padding: 350px 100px 0;
         float: right;
+        position: relative;
         color:#c6d936;
         font-family: 'Raleway', sans-serif;
         font-weight: bolder;
         font-size: 22px;
         text-align: right;
     }
+    
     #grillaPrincipal{
         display: grid;
         width: 92%;
         margin: 20px 4%;
-        height: 1500px;
+        height: 1400px;
         grid-template-columns: 100%;
         grid-template-rows: 650px 750px /*500px*/ 200px;
         grid-template-areas: "proyectos"
@@ -93,38 +84,24 @@ body{
         justify-content: space-around; 
         margin: 30px;
     }
-    .art1, .art2, .art3, .art4{
+    .card{
         width: 280px;
         height: 585px;
-        background-color: #023859;
     }
-    .art1 h2, p, a,
-    .art2 h2, p, a,
-    .art3 h2, p, a,
-    .art4 h2, p, a{
+    .card-body{
+        background-color: #023859;
         font-family: 'Raleway', sans-serif;
         color: #f2f2f2;
         text-align: left;
         padding: 10px;
     }
-    .img2{
-        background-image: url(../imgs/foto2.jpeg);
-    }
-    .img3{
-        background-image: url(../imgs/foto3.jpeg);
-    }
-    .img4{
-        background-image: url(../imgs/foto4.jpeg);
-    }
-    .img5{
-        background-image: url(../imgs/foto5.jpeg);
-    }
-    .img2, .img3, .img4, .img5{
+    .card img{
         width: 100%;
-        height: 300px;
+        height: 250px;
         background-size: cover;
         background-position: center;
     }
+    
     .galeria{
         grid-area: galeria;
         margin-top: 20px;
@@ -191,42 +168,21 @@ body{
 
 /*cabecera hojas*/
     #header2{
-        height: 130px;
+        height: 120px;
         width: 92%;
-        margin: 0 4%;
+        margin: auto;
+        background-image: none;
+        background-color: #2983a6bb;
     }
-    #header2 .cabecera{
-        height: 130px;
-        width: 100%;
-    }
-    #header2 .cabecera .logo{
-        width: 20%;
-        float: left;
-        padding: 20px 40px;
-    }
-    #header2 .cabecera .menu ul{
-        list-style: none;
-        background-color: #0238598c;
-    }
-    #header2 .cabecera .menu li{
-        padding: 80px 40px;
-        float: left;
-    }
-    #header2 .cabecera .menu li a{
-        text-align: center;
-        color: #c6d936;
-        text-decoration: none;
-        font-family: 'Raleway', sans-serif;
-        font-weight: bolder;
-        font-size: larger;
-    }
+
+ 
 
 /*proyectos*/
 
 /*galeria*/
     #fotos{
-        width: 92%;
-        margin: 0 4%;
+        width: 90%;
+        margin: 20px 4%;
         display: grid;
         grid-template-areas: "foto1 foto2"
                             "foto3 foto7"
@@ -234,8 +190,8 @@ body{
                             "foto5 foto6";
         grid-template-columns: 50% 50%;
         grid-template-rows: 400px 400px 400px 400px;
-        row-gap: 10px;
-        column-gap: 10px;
+        row-gap: 20px;
+        column-gap: 24px;
         justify-items: stretch;
         align-items: stretch;
     }

@@ -11,80 +11,116 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@400;500&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
     <title>IdeaTorresHTML</title>
 </head>
 
-<body>
-  <header id="header1">
-    <div class="cabecera">
-      <img src="imgs/logoFes4.png" alt="" class="logo">
-      <nav class="menu">
-        <ul>
-          <li><a href="">Inicio</a></li>
-          <li><a href="hojas/proyectos.html">Proyectos</a></li>
-          <li><a href="hojas/galeria.html">Galería</a></li>
-          <li><a href="hojas/blog.html">Blog</a></li>
-          <li><a href="hojas/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
+<body style="background-color: #023859;">
+  
+  <header>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #023859c2; height: 120px; width: 100%; margin: auto;">
+      <div class="container-fluid">
+        
+        <a class="navbar-brand" href="index.html">
+          <img src="imgs/logoFes4.png" alt="" width="40%" height="auto">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hojas/proyectos.html">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hojas/galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hojas/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hojas/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
     <div class="txt">
       <h1>EXÓTICAS INVASORAS</h1>
       <a href="">Artículo de Leo Adalid Luna Aguilar</a>
     </div>
-  </header>
+    
+  </header>  
 
-  <div id="grillaPrincipal">
-    <section class="proyectos">
-      <div class="grillaSub1">
-        <article class="art1" data-aos="fade-up">
-          <h2>Título</h2>
-          <div class="img2"></div>
-          <p>Descripción</p>
-          <a href="">Ver más</a>
-        </article>
-        <article class="art2" data-aos="fade-up">
-          <h2>Título</h2>
-          <div class="img3"></div>
-          <p>Descripción</p>
-          <a href="">Ver más</a>
-        </article>
-        <article class="art3" data-aos="fade-up">
-          <h2>Título</h2>
-          <div class="img4"></div>
-          <p>Descripción</p>
-          <a href="">Ver más</a>
-        </article>
-        <article class="art4" data-aos="fade-up">
-          <h2>Título</h2>
-          <div class="img5"></div>
-          <p>Descripción</p>
-          <a href="">Ver más</a>
-        </article>
-      </div>
-    </section>
+  <main>
+    <div id="grillaPrincipal">
+      <section class="proyectos">
+        <div class="grillaSub1">
+          <div class="card" style="width: 18rem; border: none;">
+            <img src="imgs/foto1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Artículo 1</h5>
+              <p class="card-text">Descripción del artículo 1 publicado por la asociación. Ejemplo: Exóticas Ivasoras</p>
+              <a href="#" class="btn btn-primary" style="background-color: #2983a6; border: none;">Ver más</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; border: none;">
+            <img src="imgs/foto2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Artículo 2</h5>
+              <p class="card-text">Descripción del artículo 2 publicado por la asociación. Ejemplo: Exóticas Ivasoras</p>
+              <a href="#" class="btn btn-primary" style="background-color: #2983a6; border: none;">Ver más</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; border: none;">
+            <img src="imgs/foto3.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Artículo 3</h5>
+              <p class="card-text">Descripción del artículo 3 publicado por la asociación. Ejemplo: Exóticas Ivasoras</p>
+              <a href="#" class="btn btn-primary" style="background-color: #2983a6; border: none;">Ver más</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; border: none;">
+            <img src="imgs/foto4.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Artículo 4</h5>
+              <p class="card-text">Descripción del artículo 4 publicado por la asociación. Ejemplo: Exóticas Ivasoras</p>
+              <a href="#" class="btn btn-primary" style="background-color: #2983a6; border: none;">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="galeria">
-      <div class="grillaSub2">
-        <div class="cuadro1" data-aos="flip-left"></div>
-        <div class="cuadro2" data-aos="zoom-in"></div>
-        <div class="cuadro3" data-aos="zoom-in"></div>
-        <div class="cuadro4" data-aos="flip-left"></div>
-        <div class="cuadro5" data-aos="zoom-in"></div>
-        <div class="cuadro6" data-aos="zoom-in"></div>
-      </div>
-    </section>
+      <section class="galeria">
+        <div class="grillaSub2">
+          <div class="cuadro1" data-aos="flip-left"></div>
+          <div class="cuadro2" data-aos="zoom-in"></div>
+          <div class="cuadro3" data-aos="zoom-in"></div>
+          <div class="cuadro4" data-aos="flip-left"></div>
+          <div class="cuadro5" data-aos="zoom-in"></div>
+          <div class="cuadro6" data-aos="zoom-in"></div>
+        </div>
+      </section>
+    </div>  
+  </main>
 
-    <footer>
-      <div class="contacto">
-        <h2>Contacto</h2>
-        <a href="">mail@direccion.com</a>
-        <br>
-        <a href="">55-3456-7890</a>
-        <p>Todos los derechos reservados</p>
-      </div>
-    </footer>
-  </div>
+  <footer>
+    <div class="contacto">
+      <h2>Contacto</h2>
+      <a href="">mail@direccion.com</a>
+      <br>
+      <a href="">55-3456-7890</a>
+      <p>Todos los derechos reservados</p>
+    </div>
+  </footer>
+  
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -92,6 +128,9 @@
     AOS.init();
   </script>  
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 
 </body>
 </html>
