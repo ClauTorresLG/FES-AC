@@ -178,6 +178,7 @@ blanco #f2f2f2
  
 
 /*proyectos*/
+    
 
 /*galeria*/
     #fotos{
@@ -219,29 +220,7 @@ blanco #f2f2f2
 
 
 /*blog*/
-    #entradas{
-        background-color: #023859;
-        margin: 30px;
-        padding: 20px;
-    }
-    #entradas h2{
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-    }
-    #entradas .mes{
-        padding: 15px;
-        color: whitesmoke;
-        font-family: 'Lato', sans-serif;
-    }
-    #entradas .mes li{
-        color: #97a629;
-        line-height: 24px;
-    }
-    #entradas .mes .mes__porMes li{
-        color: #2983a6;
-        line-height: 20px;
-    }
+ 
 
 
 /*contacto*/
