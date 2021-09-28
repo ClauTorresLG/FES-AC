@@ -17,91 +17,88 @@ blanco #f2f2f2
 /*index*/
 
     header{
-        height: 550px;
+        height: 250px;
         width: 92%;
         margin: 0 4%;
+    }
+    .cabecera{
+        height: 250px;
+        width: 92%;
+        margin: auto;
+        position: absolute;
         background-image: url(../imgs/exoticas.jpeg);
-        background-position: center;
-        background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
+    }
+    .cabeceraTexto{
+        height: 50px;
+        width: 100%;
+        padding: 10px;
+        margin-top: 200px;
+        background-color: #0238598c;
+        color: #c6d936;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 0em;
+        text-align: center;
+    }
+    .cabeceraTexto h2{
+        font-size: 1em;
+    }
+    .cabeceraTexto a{
+        font-size: .7em;
+        text-decoration: none;
+        color: #f2f2f2;
     }
     .navbar{
         position: relative;
+        z-index: 50;
+        height: 50px;
     }
-    
+    .navbar img{
+        z-index: 55;
+        height: 50px;
+    }
     .nav-item a{
-        text-align: center;
+        text-align: right;
+        margin-right: 10px;
         color: #c6d936;
         text-decoration: none;
         font-family: 'Raleway', sans-serif;
         font-weight: bolder;
-        font-size: larger;
+        font-size: small;
     }
-    .nav-item a :hover{
-        color: #2983a6;
-    }
-    .txt h1{
-        width: 30%;
-        padding: 250px 100px 0;
-        display: inline-block;
-        position: relative;
-        color:#c6d936;
-        font-family: 'Raleway', sans-serif;
-        font-size: 62px;
-        text-align: left;
-    }
-    .txt a{
-        width: 50%;
-        padding: 350px 100px 0;
-        float: right;
-        position: relative;
-        color:#c6d936;
-        font-family: 'Raleway', sans-serif;
+    .titulo{
+        background-color: #023859;
+        width: 95%;
+        height: 50px;
+        margin: 20px auto;
+        font-family: 'Montserrat', sans-serif;
         font-weight: bolder;
-        font-size: 22px;
-        text-align: right;
+        text-align: center;
+        padding: 10px;
+        letter-spacing: .3em;
     }
-    
+    .titulo a{
+        text-decoration: none;
+        color: #f2f2f2;
+    }
     #grillaPrincipal{
         display: grid;
         width: 92%;
-        margin: 20px 4%;
-        height: 1400px;
+        margin: 20px auto;
+        height: auto;
         grid-template-columns: 100%;
-        grid-template-rows: 650px 750px /*500px*/ 200px;
         grid-template-areas: "proyectos"
                              "galeria"/*
-                             "blog"*/
-                             "footer";
+                             "blog"*/;
     }
     .proyectos{
         grid-area: proyectos;
         background-color: #2983a6;
     }
-    .grillaSub1{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around; 
-        margin: 30px;
+    .grillaSub1{ 
+        margin: 2%;
     }
-    .card{
-        width: 280px;
-        height: 585px;
-    }
-    .card-body{
-        background-color: #023859;
-        font-family: 'Raleway', sans-serif;
-        color: #f2f2f2;
-        text-align: left;
-        padding: 10px;
-    }
-    .card img{
-        width: 100%;
-        height: 250px;
-        background-size: cover;
-        background-position: center;
-    }
-    
     .galeria{
         grid-area: galeria;
         margin-top: 20px;
@@ -109,15 +106,14 @@ blanco #f2f2f2
     }
     .grillaSub2{
         display: grid;
-        height: 750px;
-        margin: 30px 50px;
-        grid-template-columns: 24% 24% 24% 24%;
-        grid-template-rows: 210px 210px 210px;
-        grid-template-areas: "foto1 foto1 foto2 foto3"
-                             "foto1 foto1 foto4 foto4"
-                             "foto5 foto6 foto4 foto4";
-        row-gap: 20px;
-        column-gap: 20px;
+        height: 470px;
+        margin: 20px auto;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 150px 150px 150px;
+        grid-template-areas: "foto1 foto2"
+                             "foto3 foto4"
+                             "foto5 foto6";
+        row-gap: 2%;
         justify-content: space-around;
     }
     .cuadro1{
@@ -146,53 +142,28 @@ blanco #f2f2f2
     }
     .cuadro1, .cuadro2, .cuadro3, .cuadro4, .cuadro5, .cuadro6{
         background-size: cover;
+        background-position: center;
     }
-
-    footer{
-        grid-area: footer;
-        margin-top: 20px;
-        background-image: linear-gradient(to bottom, #023859 , #2983a6);
-    }
-    .contacto{
-        width: 300px;
-        height: 150px;
-        margin: 20px 70px;
-    }
-    .contacto h2, a, p{
-        font-family: 'Montserrat', sans-serif;
-        color: #f2f2f2;
-        padding: 10px;
-        text-align: left;
-    }
-
 
 /*cabecera hojas*/
     #header2{
-        height: 120px;
-        width: 92%;
-        margin: auto;
+        height: 80px;
         background-image: none;
-        background-color: #2983a6bb;
     }
-
- 
-
-/*proyectos*/
-    
 
 /*galeria*/
     #fotos{
         width: 90%;
-        margin: 20px 4%;
+        margin: auto;
         display: grid;
-        grid-template-areas: "foto1 foto2"
+        grid-template-areas:"foto1 foto2"
                             "foto3 foto7"
                             "foto4 foto7"
                             "foto5 foto6";
         grid-template-columns: 50% 50%;
-        grid-template-rows: 400px 400px 400px 400px;
-        row-gap: 20px;
-        column-gap: 24px;
+        grid-template-rows: 200px 200px 200px 200px;
+        row-gap: .5rem;
+        column-gap: .5rem;
         justify-items: stretch;
         align-items: stretch;
     }
@@ -218,25 +189,195 @@ blanco #f2f2f2
         grid-area: foto7;
     }
 
+/*footer*/
+footer{
+    margin: 20px 0 30px;
+}
+.navbar2{
+    width: 90%;
+    margin: 10px auto;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar2 ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+.navbar2 a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    padding-right: 10px;
+    text-align: left;
+}
+.contacto{
+    width: 90%;
+    margin: 10px auto;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+.redes{
+    width: 90%;
+    margin: 10px auto;
+    font-family: 'Montserrat', sans-serif;
+}
+#cajaContacto .navbar2 h2,
+.contacto h2,
+.redes h2{
+    color: #c6d936;
+    font-size: 1em;
+} 
+#cajaContacto .navbar2 a,
+.contacto a,
+.contacto p,
+.redes p{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: small;
+}
+
+
+/*tablet md*/
+@media screen and (min-width: 768px){
+    header{
+        height: 400px;
+    }
+    .cabecera{
+        height: 400px;
+    }
+    .cabeceraTexto{
+        height: 70px;
+        margin-top: 330px;
+        line-height: 0.5em;
+    }
+    .cabeceraTexto h2{
+        font-size: 1.5em;
+    }
+    .cabeceraTexto a{
+        font-size: 1em;
+    }
+    .navbar img{
+        height: 70px;
+        margin: 10px 1em
+    }
+    .offcanvas{
+        width: 200px;
+    }
+    .nav-item a{
+        font-size: medium;
+    }
+    #header2{
+        height: 90px;
+    }
+    .grillaSub2{
+        height: 560px;
+        grid-template-columns: 22% 22% 22% 22%;
+        grid-template-rows: 180px 180px 180px;
+        grid-template-areas: "foto1 foto1 foto2 foto3"
+                             "foto1 foto1 foto4 foto4"
+                             "foto5 foto6 foto4 foto4";
+    }
+    #fotos{
+        margin: 40px 4%;
+        grid-template-rows: 300px 300px 300px 300px;
+        row-gap: 20px;
+        column-gap: 24px;
+    }
+    #cajaContacto{
+        display: flex;
+        margin-top: 20px;
+    }
+    .navbar2{
+        width: 10%;
+        margin-top: 0;
+    }
+    .navbar2 ul{
+        list-style-type: none;
+        display: inline;
+        padding: 0;
+    }
+    .contacto{
+        width: 43%;
+        margin: 0;
+    }
+    .redes{
+        width: 25%;
+        margin-top: 0;
+    }
+    #cajaContacto .navbar2 h2,
+    .contacto h2,
+    .redes h2{
+        font-size: 1.2em;
+    } 
+    #cajaContacto .navbar2 a,
+    .contacto a,
+    .contacto p,
+    .redes p{
+        font-size: medium;
+    }
+}
+
+/*pc lg*/
+@media screen and (min-width: 992px){
+    header{
+        height: 500px;
+    }
+    .cabecera{
+        height: 500px;
+    }
+    .cabeceraTexto{
+        height: 90px;
+        margin-top: 410px;
+        line-height: 0.5em;
+    }
+    .cabeceraTexto h2{
+        font-size: 2em;
+    }
+    .cabeceraTexto a{
+        font-size: 1.5em;
+    }
+    .container-fluid{
+       padding-top: 80px; 
+    }
+    .navbar img{
+        height: 95px;
+        margin: 20px 1em;
+    }
+    .offcanvas{
+        width: 350px;
+    }
+    .nav-item a{
+        font-size: larger;
+    }
+    #header2{
+        height: 100px;
+    }
+    .grillaSub2{
+        height: 670px;
+        margin: 20px 20px;
+        grid-template-columns: 24% 24% 24% 24%;
+        grid-template-rows: 210px 210px 210px;
+    }
+    #fotos{
+        grid-template-rows: 400px 400px 400px 400px;
+    }
+    #cajaContacto .navbar2 h2,
+    .contacto h2,
+    .redes h2{
+        font-size: 1.5em;
+    } 
+    #cajaContacto .navbar2 a,
+    .contacto a,
+    .contacto p,
+    .redes p{
+        font-size: medium;
+    }
+}
+
 
 /*blog*/
  
 
 
-/*contacto*/
-    #cont{
-        background-color: #2983a6;
-        height: 350px;
-        margin: 10px 30px;
-        padding: 20px 30px;
-        color: #023859;
-        font-family: 'Lato', sans-serif;
-        font-size: larger;
-        line-height: 24px;
-        position: absolute;
-    }
-    #cont .titulo{
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        text-decoration: underline;
-    }
+

@@ -17,34 +17,40 @@
 </head>
 
 <body style="background-color: #023859;">
+ 
   <header id="header2">
-    <nav class="navbar navbar-expand-lg" style="background-color: #023859c2; height: 120px; width: 100%; margin: auto;">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        
         <a class="navbar-brand" href="../index.html">
-          <img src="../imgs/logoFes4.png" alt="" width="40%" height="auto">
+          <img src="../imgs/logoFes4.png" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" style="border-width: 2px; border-color: #c6d936; margin: 10px 10px 0; color: #c6d936;">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Inicio</a>
-            <li class="nav-item">
-              <a class="nav-link" href="proyectos.html">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Galería</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel" style="width: 200px;">
+          <div class="offcanvas-header" style="background-color: #c6d936; text-align: right; font-family: 'Raleway', sans-serif; color: #023859;">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" style="margin-top: 50px; text-align: left;">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -61,6 +67,48 @@
   </div>
 
   
+  <footer>
+    <div id="cajaContacto">
+
+      <div class="navbar2"> 
+        <h2>Navegar</h2>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <a href="../index.html">Inicio</a>
+              </li>
+              <li>
+                <a href="proyectos.html">Proyectos</a>
+              </li>
+              <li>
+                <a href="">Galería</a>
+              </li>
+              <li>
+                <a href="blog.html">Blog</a>
+              </li>
+              <li>
+                <a href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>  
+      </div>
+
+      <div class="contacto">
+        <h2>Contacto</h2>
+        <p>Queremos conocerte. Si quieres publicar en nuestro blog, necesitas asesoría para tu proyecto, o te interesa saber más de nuestra labor escríbenos a: <br><a href="" style="color: #c6d936;">contacto@fes-ac.com</a></p>
+      </div>
+
+      <div class="redes">
+        <h2>Síguenos</h2>
+        <p>Todos los derechos reservados</p>
+      </div>
+    </div>
+
+  </footer>
+
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

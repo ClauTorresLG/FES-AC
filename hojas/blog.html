@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/pruebacss.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@400;500&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
@@ -16,75 +17,113 @@
 </head>
 
 <body style="background-color: #023859;">
+
   <header id="header2">
-    <nav class="navbar navbar-expand-lg" style="background-color: #023859c2; height: 120px; width: 100%; margin: auto;">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        
         <a class="navbar-brand" href="../index.html">
-          <img src="../imgs/logoFes4.png" alt="" width="40%" height="auto">
+          <img src="../imgs/logoFes4.png" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" style="border-width: 2px; border-color: #c6d936; margin: 10px 10px 0; color: #c6d936;">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Inicio</a>
-            <li class="nav-item">
-              <a class="nav-link" href="proyectos.html">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="galeria.html">Galería</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel" style="width: 200px;">
+          <div class="offcanvas-header" style="background-color: #c6d936; text-align: right; font-family: 'Raleway', sans-serif; color: #023859;">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" style="margin-top: 50px; text-align: left;">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
-  </header> 
+  </header>  
 
-  <div class="container" style="width: 92%; margin: 20px auto; padding: 20px; background-color: #2983a6; color: #f2f2f2;">
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-3">
-        JULIO
-        <ul>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, repellendus?</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, hic?</li>
-        </ul>
-      </div>
+  <div id="blog">
+    <h2>Título de la entrada</h2>
+    <h5>19/10/2021</h5>
+    <div class="entrada">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et dolorum enim aliquid libero neque perferendis impedit consequuntur ullam ad magni tempora maxime porro itaque totam, repellendus, error aut ex minima.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis vero dolore non voluptas praesentium blanditiis omnis mollitia reprehenderit natus molestiae, eum aut beatae, incidunt at quaerat! Odio molestias ipsam assumenda!</p>
+      <img src="../imgs/foto5.jpeg" alt="">
+      <figure class="text-center" style="color: #023859;">
+        <blockquote class="blockquote">
+          <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </figure>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ut expedita doloribus inventore sapiente quasi nobis qui nisi non quibusdam labore quidem, illo iste distinctio impedit laudantium minima eos in.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto harum earum aperiam provident quam quisquam veniam vel. Harum, fuga quisquam praesentium ex placeat amet! Tempora eius velit minus officia!</p>
+    </div>
+    
+    <div>
       
-      <div class="col-12 col-md-6 col-lg-3">
-        JUNIO
-        <ul>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quisquam.</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, impedit.</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, deleniti.</li>
-        </ul>
-      </div>
-      
-      <div class="col-12 col-md-6 col-lg-3">
-        MAYO
-        <ul>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, repellendus?</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, hic?</li>
-        </ul>
-      </div> 
-      
-      <div class="col-12 col-md-6 col-lg-3">
-        ABRIL
-        <ul>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, repellendus?</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, hic?</li>
-        </ul>
-      </div> 
-    </div>  
+    </div>
   </div>
+
+
+
+
+  <footer>
+    <div id="cajaContacto">
+
+      <div class="navbar2"> 
+        <h2>Navegar</h2>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <a href="../index.html">Inicio</a>
+              </li>
+              <li>
+                <a href="proyectos.html">Proyectos</a>
+              </li>
+              <li>
+                <a href="galeria.html">Galería</a>
+              </li>
+              <li>
+                <a href="">Blog</a>
+              </li>
+              <li>
+                <a href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>  
+      </div>
+
+      <div class="contacto">
+        <h2>Contacto</h2>
+        <p>Queremos conocerte. Si quieres publicar en nuestro blog, necesitas asesoría para tu proyecto, o te interesa saber más de nuestra labor escríbenos a: <br><a href="" style="color: #c6d936;">contacto@fes-ac.com</a></p>
+      </div>
+
+      <div class="redes">
+        <h2>Síguenos</h2>
+        <p>Todos los derechos reservados</p>
+      </div>
+    </div>
+
+  </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>

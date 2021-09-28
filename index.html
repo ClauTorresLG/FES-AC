@@ -20,85 +20,103 @@
   
   <header>
 
-    <nav class="navbar navbar-expand-lg" style="background-color: #023859c2; height: 120px; width: 100%; margin: auto;">
+    <div class="cabecera">
+      <div class="cabeceraTexto">
+        <h2>EXÓTICAS INVASORAS</h2>
+        <a href="">Artículo de Leo Adalid Luna Aguilar</a>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        
         <a class="navbar-brand" href="index.html">
-          <img src="imgs/logoFes4.png" alt="" width="40%" height="auto">
+          <img src="imgs/logoFes4.png" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" style="border-width: 2px; border-color: #c6d936; margin: 10px 10px 0; color: #c6d936;">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hojas/proyectos.html">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hojas/galeria.html">Galería</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hojas/blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hojas/contacto.html">Contacto</a>
-            </li>
-          </ul>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel" style="width: 200px;">
+          <div class="offcanvas-header" style="background-color: #c6d936; text-align: right; font-family: 'Raleway', sans-serif; color: #023859;">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" style="margin-top: 50px; background-color: #0238598c; text-align: left;">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hojas/proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hojas/galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hojas/blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hojas/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
-  
-    <div class="txt">
-      <h1>EXÓTICAS INVASORAS</h1>
-      <a href="">Artículo de Leo Adalid Luna Aguilar</a>
-    </div>
-    
+
   </header>  
 
   <main>
     <div id="grillaPrincipal">
       <section class="proyectos">
-        <div class="grillaSub1">
-          <div class="card" style="width: 18rem; border: none;">
-            <img src="imgs/foto1.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Artículo 1</h5>
-              <p class="card-text">Descripción del artículo 1 publicado por la asociación. Ejemplo: Exóticas Ivasoras</p>
-              <a href="#" class="btn btn-primary" style="background-color: #2983a6; border: none;">Ver más</a>
+        <div class="titulo"><a href="hojas/proyectos.html"><h2>Proyectos</h2></div></a>
+        <div class="grillaSub1"> 
+          <div class="row"  style=" margin: 20px auto;">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="card" style="border: none; height: 500px; margin-bottom: 1em;">
+                <img src="imgs/foto1.jpeg" class="card-img-top" alt="..." style="height: 200px;">
+                <div class="card-body" style="background-color: #023859; text-align: justify; font-family: 'Raleway', sans-serif; color: #f2f2f2; padding: 1em; font-size: small;">
+                  <h5 class="card-title">Artículo 1</h5>
+                  <p class="card-text">Descripción del artículo 1 publicado por la asociación. Ejemplo: Exóticas Ivasoras</p>
+                  <a href="#" class="btn btn-primary" style="background-color: #2983a6; border: none;">Ver más</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 18rem; border: none;">
-            <img src="imgs/foto2.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Artículo 2</h5>
-              <p class="card-text">Descripción del artículo 2 publicado por la asociación. Ejemplo: Exóticas Ivasoras</p>
-              <a href="#" class="btn btn-primary" style="background-color: #2983a6; border: none;">Ver más</a>
+            <div class="col-sm-12 col-md-6 col-lg-3"> 
+              <div class="card" style="border: none; height: 500px; margin-bottom: 1em;">
+                <img src="imgs/foto2.jpeg" class="card-img-top" alt="..." style="height: 200px;">
+                <div class="card-body" style="background-color: #023859; text-align: justify; font-family: 'Raleway', sans-serif; color: #f2f2f2; padding: 1em; font-size: small;">
+                  <h5 class="card-title">Artículo 2</h5>
+                  <p class="card-text">Descripción del artículo 2 publicado por la asociación. Ejemplo: Exóticas Ivasoras</p>
+                  <a href="#" class="btn btn-primary" style="background-color: #2983a6; border: none;">Ver más</a>
+                </div>
+              </div>
+            </div> 
+            <div class="col-sm-12 col-md-6 col-lg-3">  
+              <div class="card" style="border: none; height: 500px; margin-bottom: 1em;">
+                <img src="imgs/foto3.jpeg" class="card-img-top" alt="..." style="height: 200px;">
+                <div class="card-body" style="background-color: #023859; text-align: justify; font-family: 'Raleway', sans-serif; color: #f2f2f2; padding: 1em; font-size: small;">
+                  <h5 class="card-title">Artículo 3</h5>
+                  <p class="card-text">Descripción del artículo 3 publicado por la asociación. Ejemplo: Exóticas Ivasoras</p>
+                  <a href="#" class="btn btn-primary" style="background-color: #2983a6; border: none;">Ver más</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 18rem; border: none;">
-            <img src="imgs/foto3.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Artículo 3</h5>
-              <p class="card-text">Descripción del artículo 3 publicado por la asociación. Ejemplo: Exóticas Ivasoras</p>
-              <a href="#" class="btn btn-primary" style="background-color: #2983a6; border: none;">Ver más</a>
+            <div class="col-sm-12 col-md-6 col-lg-3">   
+              <div class="card" style="border: none; height: 500px; margin-bottom: 1em;">
+                <img src="imgs/foto4.jpeg" class="card-img-top" alt="..." style="height: 200px;">
+                <div class="card-body" style="background-color: #023859; text-align: justify; font-family: 'Raleway', sans-serif; color: #f2f2f2; padding: 1em; font-size: small;">
+                  <h5 class="card-title">Artículo 4</h5>
+                  <p class="card-text">Descripción del artículo 4 publicado por la asociación. Ejemplo: Exóticas Ivasoras</p>
+                  <a href="#" class="btn btn-primary" style="background-color: #2983a6; border: none;">Ver más</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 18rem; border: none;">
-            <img src="imgs/foto4.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Artículo 4</h5>
-              <p class="card-text">Descripción del artículo 4 publicado por la asociación. Ejemplo: Exóticas Ivasoras</p>
-              <a href="#" class="btn btn-primary" style="background-color: #2983a6; border: none;">Ver más</a>
-            </div>
-          </div>
+          </div>    
         </div>
       </section>
 
       <section class="galeria">
+        <div class="titulo"><a href="hojas/galeria.html"><h2>Galería</h2></div></a>
         <div class="grillaSub2">
           <div class="cuadro1" data-aos="flip-left"></div>
           <div class="cuadro2" data-aos="zoom-in"></div>
@@ -112,13 +130,45 @@
   </main>
 
   <footer>
-    <div class="contacto">
-      <h2>Contacto</h2>
-      <a href="">mail@direccion.com</a>
-      <br>
-      <a href="">55-3456-7890</a>
-      <p>Todos los derechos reservados</p>
-    </div>
+
+    <div id="cajaContacto">
+
+      <div class="navbar2"> 
+        <h2>Navegar</h2>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Inicio</a>
+              </li>
+              <li>
+                <a href="hojas/proyectos.html">Proyectos</a>
+              </li>
+              <li>
+                <a href="hojas/galeria.html">Galería</a>
+              </li>
+              <li>
+                <a href="hojas/blog.html">Blog</a>
+              </li>
+              <li>
+                <a href="hojas/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>  
+      </div>
+
+      <div class="contacto">
+        <h2>Contacto</h2>
+        <p>Queremos conocerte. Si quieres publicar en nuestro blog, necesitas asesoría para tu proyecto, o te interesa saber más de nuestra labor escríbenos a: <br><a href="" style="color: #c6d936;">contacto@fes-ac.com</a></p>
+      </div>
+
+      <div class="redes">
+        <h2>Síguenos</h2>
+        <p>Todos los derechos reservados</p>
+      </div>
+    </div> 
+
   </footer>
   
 

@@ -1,0 +1,145 @@
+#header2 {
+  height: 80px;
+  background-image: none;
+  width: 92%;
+  margin: auto; }
+  #header2 .navbar {
+    position: relative;
+    z-index: 50;
+    height: 50px; }
+    #header2 .navbar img {
+      z-index: 55;
+      height: 50px; }
+  #header2 .nav-item a {
+    text-align: right;
+    margin-right: 10px;
+    color: #c6d936;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+    font-size: small; }
+
+#blog {
+  width: 92%;
+  height: auto;
+  margin: auto;
+  background-color: #97a629;
+  padding: 20px; }
+  #blog h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #023859;
+    text-align: center; }
+  #blog h5 {
+    font-family: "Raleway", sans-serif;
+    color: #023859;
+    text-align: center; }
+  #blog .entrada {
+    width: 95%;
+    margin: auto;
+    color: #f2f2f2;
+    font-family: "Raleway", sans-serif;
+    text-align: justify; }
+  #blog img {
+    width: 100%; }
+
+.nosotros {
+  color: #f2f2f2;
+  font-family: "Raleway", sans-serif;
+  width: 92%;
+  margin: auto; }
+  .nosotros strong {
+    color: #c6d936; }
+
+footer {
+  margin: 20px 0 30px; }
+  footer .navbar2 {
+    width: 90%;
+    margin: 10px auto;
+    font-family: "Montserrat", sans-serif; }
+    footer .navbar2 ul {
+      list-style-type: none;
+      display: flex;
+      padding: 0; }
+    footer .navbar2 a {
+      color: #f2f2f2;
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      font-size: medium;
+      padding-right: 10px;
+      text-align: left; }
+  footer .contacto {
+    width: 90%;
+    margin: 10px auto;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify; }
+  footer .redes {
+    width: 90%;
+    margin: 10px auto;
+    font-family: "Montserrat", sans-serif; }
+  footer h2 {
+    color: #c6d936;
+    font-size: 1em; }
+  footer a,
+  footer p {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: small; }
+
+/*tablet md*/
+@media screen and (min-width: 768px) {
+  #header2 {
+    height: 90px; }
+    #header2 .navbar img {
+      height: 70px;
+      margin: 10px 1em; }
+    #header2 .offcanvas {
+      width: 200px; }
+    #header2 .nav-item a {
+      font-size: medium; }
+  #blog {
+    margin-top: 20px; }
+  #cajaContacto {
+    display: flex;
+    margin-top: 20px; }
+    #cajaContacto .navbar2 {
+      width: 10%;
+      margin-top: 0; }
+      #cajaContacto .navbar2 ul {
+        list-style-type: none;
+        display: inline;
+        padding: 0; }
+    #cajaContacto .contacto {
+      width: 43%;
+      margin: 0; }
+    #cajaContacto .redes {
+      width: 25%;
+      margin-top: 0; }
+    #cajaContacto h2 {
+      font-size: 1.2em; }
+    #cajaContacto a,
+    #cajaContacto p {
+      font-size: medium; } }
+
+/*pc lg*/
+@media screen and (min-width: 992px) {
+  #header2 {
+    height: 100px;
+    margin-top: 40px; }
+    #header2 .navbar img {
+      height: 95px;
+      margin: 20px 1em; }
+    #header2 .offcanvas {
+      width: 350px; }
+    #header2 .nav-item a {
+      font-size: larger; }
+  #blog {
+    margin-top: 10px; }
+    #blog img {
+      height: 350px;
+      width: fit-content;
+      margin: 0 27%; }
+  #cajaContacto h2 {
+    font-size: 1.5em; }
+  #cajaContacto a,
+  #cajaContacto p {
+    font-size: medium; } }
