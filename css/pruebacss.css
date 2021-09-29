@@ -11,42 +11,47 @@
       z-index: 55;
       height: 50px; }
   #header2 .nav-item a {
-    text-align: right;
     margin-right: 10px;
-    color: #c6d936;
     text-decoration: none;
-    font-family: "Raleway", sans-serif;
     font-weight: bolder;
-    font-size: small; }
+    font-size: small;
+    font-family: "Raleway", sans-serif;
+    color: #c6d936;
+    text-align: right; }
 
 #blog {
   width: 92%;
   height: auto;
   margin: auto;
-  background-color: #97a629;
+  background-color: #2983a6;
   padding: 20px; }
   #blog h2 {
     font-family: "Montserrat", sans-serif;
     color: #023859;
-    text-align: center; }
+    text-align: center;
+    font-weight: bolder; }
   #blog h5 {
     font-family: "Raleway", sans-serif;
-    color: #023859;
+    color: #c6d936;
     text-align: center; }
   #blog .entrada {
-    width: 95%;
+    width: 100%;
     margin: auto;
-    color: #f2f2f2;
+    padding: 20px;
     font-family: "Raleway", sans-serif;
+    color: #f2f2f2;
     text-align: justify; }
-  #blog img {
-    width: 100%; }
+    #blog .entrada img {
+      width: auto;
+      height: 350px;
+      margin: 20px 22%; }
 
 .nosotros {
-  color: #f2f2f2;
-  font-family: "Raleway", sans-serif;
   width: 92%;
-  margin: auto; }
+  margin: 40px auto;
+  font-family: "Raleway", sans-serif;
+  color: #f2f2f2;
+  text-align: justify; }
   .nosotros strong {
     color: #c6d936; }
 
@@ -61,11 +66,11 @@ footer {
       display: flex;
       padding: 0; }
     footer .navbar2 a {
-      color: #f2f2f2;
       text-decoration: none;
-      font-family: "Montserrat", sans-serif;
       font-size: medium;
       padding-right: 10px;
+      font-family: "Montserrat", sans-serif;
+      color: #f2f2f2;
       text-align: left; }
   footer .contacto {
     width: 90%;

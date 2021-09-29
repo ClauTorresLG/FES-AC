@@ -1,6 +1,12 @@
 
 @import "_variables.scss";
 
+@mixin texto ($fuente, $color, $alineación){
+    font-family: $fuente;
+    color: $color;
+    text-align: $alineación;
+}
+
 #header2{
     height: 80px;
     background-image: none;
@@ -18,54 +24,49 @@
         }
     }
     .nav-item a{
-        text-align: right;
         margin-right: 10px;
-        color: $amarillo;
         text-decoration: none;
-        font-family: $fuente2;
         font-weight: bolder;
         font-size: small;
+        @include texto ($fuente2, $amarillo, right);
     }
 
 }
+
 
 #blog{
     width: 92%;
     height: auto;
     margin: auto;
-    background-color: $verde;
+    background-color: $azulClaro;
     padding: 20px;
 
     h2{
-        font-family: $fuente1;
-        color: $azulOscuro;
-        text-align: center;
+        @include texto ($fuente1,$azulOscuro,center);
+        font-weight: bolder;
     }
     h5{
-        font-family: $fuente2;
-        color: $azulOscuro;
-        text-align: center;
+        @include texto ($fuente2,$amarillo,center);
     }
-
     .entrada{
-        width: 95%;
+        width: 100%;
         margin: auto;
-        color: $blanco;
-        font-family: $fuente2;
-        text-align: justify;
+        padding: 20px;
+        @include texto ($fuente2, $blanco, justify);
 
+        img{
+            width: auto;
+            height: 350px;
+            margin: 20px 22%;
+       }
     }
-
-    img{
-         width: 100%;
-    }
+    
 }
 
 .nosotros{
-    color: $blanco;
-    font-family: $fuente2;
     width: 92%;
-    margin: auto;
+    margin: 40px auto;
+    @include texto($fuente2, $blanco, justify);
 
     strong{
         color: $amarillo;
@@ -85,12 +86,11 @@ footer{
             padding: 0;
         }
         a{
-            color: $blanco;
             text-decoration: none;
-            font-family: $fuente1;
             font-size: medium;
             padding-right: 10px;
-            text-align: left;
+            @include texto ($fuente1, $blanco, left);
+
         }
     }
     .contacto{
