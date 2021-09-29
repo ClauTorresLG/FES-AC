@@ -1,7 +1,7 @@
 #header2 {
   height: 80px;
   background-image: none;
-  width: 92%;
+  width: 90%;
   margin: auto; }
   #header2 .navbar {
     position: relative;
@@ -20,11 +20,11 @@
     text-align: right; }
 
 #blog {
-  width: 92%;
+  width: 90%;
   height: auto;
   margin: auto;
   background-color: #2983a6;
-  padding: 20px; }
+  padding: 10px; }
   #blog h2 {
     font-family: "Montserrat", sans-serif;
     color: #023859;
@@ -33,21 +33,21 @@
   #blog h5 {
     font-family: "Raleway", sans-serif;
     color: #c6d936;
-    text-align: center; }
+    text-align: center;
+    font-size: small; }
   #blog .entrada {
     width: 100%;
     margin: auto;
-    padding: 20px;
     font-family: "Raleway", sans-serif;
     color: #f2f2f2;
-    text-align: justify; }
+    text-align: justify;
+    padding: 20px; }
     #blog .entrada img {
-      width: auto;
-      height: 350px;
-      margin: 20px 22%; }
+      width: 100%;
+      margin: 20px auto; }
 
 .nosotros {
-  width: 92%;
+  width: 90%;
   margin: 40px auto;
   font-family: "Raleway", sans-serif;
   color: #f2f2f2;
@@ -90,7 +90,6 @@ footer {
     text-decoration: none;
     font-size: small; }
 
-/*tablet md*/
 @media screen and (min-width: 768px) {
   #header2 {
     height: 90px; }
@@ -103,6 +102,8 @@ footer {
       font-size: medium; }
   #blog {
     margin-top: 20px; }
+    #blog h5 {
+      font-size: medium; }
   #cajaContacto {
     display: flex;
     margin-top: 20px; }
@@ -125,7 +126,6 @@ footer {
     #cajaContacto p {
       font-size: medium; } }
 
-/*pc lg*/
 @media screen and (min-width: 992px) {
   #header2 {
     height: 100px;
@@ -139,10 +139,9 @@ footer {
       font-size: larger; }
   #blog {
     margin-top: 10px; }
-    #blog img {
-      height: 350px;
-      width: fit-content;
-      margin: 0 27%; }
+    #blog .entrada img {
+      width: 60%;
+      margin: 20px 20%; }
   #cajaContacto h2 {
     font-size: 1.5em; }
   #cajaContacto a,

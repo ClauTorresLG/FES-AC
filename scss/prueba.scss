@@ -10,7 +10,7 @@
 #header2{
     height: 80px;
     background-image: none;
-    width: 92%;
+    width: 90%;
     margin: auto;
 
     .navbar{
@@ -33,13 +33,12 @@
 
 }
 
-
 #blog{
-    width: 92%;
+    width: 90%;
     height: auto;
     margin: auto;
-    background-color: $amarillo;
-    padding: 20px;
+    background-color: $azulClaro;
+    padding: 10px;
 
     h2{
         @include texto ($fuente1,$azulOscuro,center);
@@ -47,23 +46,23 @@
     }
     h5{
         @include texto ($fuente2,$amarillo,center);
+        font-size: small;
     }
     .entrada{
         width: 100%;
         margin: auto;
-        padding: 20px;
         @include texto ($fuente2, $blanco, justify);
+        padding: 20px;
 
         img{
-            width: auto;
-            height: 350px;
-            margin: 20px 22%;
+            width: 100%;
+            margin: 20px auto;
+        }
     }
-    
 }
 
 .nosotros{
-    width: 92%;
+    width: 90%;
     margin: 40px auto;
     @include texto($fuente2, $blanco, justify);
 
@@ -115,7 +114,8 @@ footer{
     }
 }
 
-/*tablet md*/
+
+
 @media screen and (min-width: 768px){
     #header2{
         height: 90px;
@@ -133,6 +133,10 @@ footer{
     }
     #blog{
         margin-top: 20px;
+
+        h5{
+            font-size: medium;
+        }
     }
     #cajaContacto{
         display: flex;
@@ -166,7 +170,7 @@ footer{
     }
 }
 
-/*pc lg*/
+
 @media screen and (min-width: 992px){
     #header2{
         height: 100px;
@@ -186,10 +190,9 @@ footer{
     #blog{
         margin-top: 10px;
 
-        img{
-            height: 350px;
-            width: fit-content;
-            margin: 0 27%;
+        .entrada img{
+            width: 60%;
+            margin: 20px 20%;
         }
     }
     #cajaContacto{
