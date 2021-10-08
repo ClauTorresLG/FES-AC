@@ -414,6 +414,18 @@ index header*/
                 width: 98%;
                 margin: auto;
         }
+        main{
+            .galeria{
+                .grillaSub2{
+                    height: 560px;
+                    grid-template-columns: 22% 22% 22% 22%;
+                    grid-template-rows: 180px 180px 180px;
+                    grid-template-areas: "foto1 foto1 foto2 foto3"
+                                        "foto1 foto1 foto4 foto4"
+                                        "foto5 foto6 foto4 foto4";
+                }
+            }
+        }
         #fotos{
             margin: 40px 4%;
             grid-template-rows: 300px 300px 300px 300px;
@@ -485,12 +497,10 @@ index header*/
         main{
             .galeria{
                 .grillaSub2{
-                    height: 530px;
+                    height: 670px;
                     margin: 20px 20px;
-                    grid-template-columns: 30% 30% 30%;
-                    grid-template-rows: 250px 250px;
-                    grid-template-areas: "foto1 foto2 foto3"
-                                        "foto4 foto5 foto6";
+                    grid-template-columns: 24% 24% 24% 24%;
+                    grid-template-rows: 210px 210px 210px;
                 }
             }
         }
