@@ -1,3 +1,68 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  border: 0; }
+
+/*mobile-first
+index header*/
+header {
+  height: 250px;
+  width: 92%;
+  margin: auto; }
+  header .cabecera {
+    height: 250px;
+    width: 92%;
+    margin: auto;
+    position: absolute;
+    background-image: url(../imgs/proyectos/exoticas.jpeg);
+    background-size: cover;
+    background-position: center; }
+  header .cabeceraTexto {
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 200px;
+    background-color: #0238598c;
+    color: #c6d936;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 0em;
+    text-align: center; }
+    header .cabeceraTexto h1 {
+      font-size: 1em; }
+    header .cabeceraTexto a {
+      font-size: .7em;
+      text-decoration: none;
+      color: #f2f2f2; }
+  header .navbar {
+    position: relative;
+    z-index: 50;
+    height: 50px; }
+    header .navbar img {
+      z-index: 55;
+      height: 50px; }
+    header .navbar a {
+      text-align: right;
+      margin-right: 10px;
+      color: #c6d936;
+      text-decoration: none;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bolder;
+      font-size: small; }
+  header .titulo {
+    background-color: #023859;
+    width: 95%;
+    height: 50px;
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: .3em; }
+    header .titulo a {
+      text-decoration: none;
+      color: #f2f2f2; }
+
+/*header hojas*/
 #header2 {
   height: 80px;
   background-image: none;
@@ -19,6 +84,117 @@
     color: #c6d936;
     text-align: right; }
 
+main #grillaPrincipal {
+  display: grid;
+  width: 92%;
+  margin: 20px auto;
+  height: auto;
+  grid-template-columns: 100%;
+  grid-template-areas: "proyectos" "galeria"; }
+  main #grillaPrincipal .proyectos {
+    grid-area: proyectos;
+    background-color: #2983a6; }
+    main #grillaPrincipal .proyectos .titulo h2 {
+      color: #c6d936;
+      text-align: center;
+      padding-top: .5em; }
+    main #grillaPrincipal .proyectos .titulo a {
+      text-decoration: none; }
+    main #grillaPrincipal .proyectos .card {
+      border: none;
+      height: auto;
+      margin-bottom: 1em; }
+      main #grillaPrincipal .proyectos .card img {
+        height: 200px; }
+    main #grillaPrincipal .proyectos .card-body {
+      background-color: #023859;
+      text-align: left;
+      font-family: 'Raleway', sans-serif;
+      color: #f2f2f2;
+      padding: 1em;
+      font-size: smaller; }
+      main #grillaPrincipal .proyectos .card-body .btn {
+        background-color: #2983a6;
+        border: none; }
+      main #grillaPrincipal .proyectos .card-body h5 {
+        font-size: medium; }
+
+main .galeria {
+  grid-area: galeria;
+  margin-top: 20px;
+  background-color: #c6d936; }
+  main .galeria .grillaSub2 {
+    display: grid;
+    height: 470px;
+    margin: 10px auto;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6";
+    row-gap: 2%;
+    justify-content: space-around; }
+    main .galeria .grillaSub2 .cuadro1 {
+      grid-area: foto1;
+      background-image: url(../imgs/galería/foto1.jpeg); }
+    main .galeria .grillaSub2 .cuadro2 {
+      grid-area: foto2;
+      background-image: url(../imgs/galería/foto2.jpeg); }
+    main .galeria .grillaSub2 .cuadro3 {
+      grid-area: foto3;
+      background-image: url(../imgs/galería/foto3.jpeg); }
+    main .galeria .grillaSub2 .cuadro4 {
+      grid-area: foto4;
+      background-image: url(../imgs/galería/foto4.jpeg); }
+    main .galeria .grillaSub2 .cuadro5 {
+      grid-area: foto5;
+      background-image: url(../imgs/galería/foto5.jpeg); }
+    main .galeria .grillaSub2 .cuadro6 {
+      grid-area: foto6;
+      background-image: url(../imgs/galería/foto6.jpeg); }
+    main .galeria .grillaSub2 .cuadro1, main .galeria .grillaSub2 .cuadro2, main .galeria .grillaSub2 .cuadro3, main .galeria .grillaSub2 .cuadro4, main .galeria .grillaSub2 .cuadro5, main .galeria .grillaSub2 .cuadro6 {
+      background-size: cover;
+      background-position: center; }
+  main .galeria .titulo h2 {
+    color: #023859;
+    text-align: center;
+    padding-top: .5em; }
+  main .galeria .titulo a {
+    text-decoration: none; }
+
+/*hoja galería*/
+#fotos {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "foto1 foto2" "foto3 foto7" "foto4 foto7" "foto5 foto6";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 200px 200px 200px 200px;
+  row-gap: .5rem;
+  column-gap: .5rem;
+  justify-items: stretch;
+  align-items: stretch; }
+
+.foto1 {
+  grid-area: foto1; }
+
+.foto2 {
+  grid-area: foto2; }
+
+.foto3 {
+  grid-area: foto3; }
+
+.foto4 {
+  grid-area: foto4; }
+
+.foto5 {
+  grid-area: foto5; }
+
+.foto6 {
+  grid-area: foto6; }
+
+.foto7 {
+  grid-area: foto7; }
+
+/*hoja blog*/
 #blog {
   width: 90%;
   height: auto;
@@ -46,51 +222,83 @@
       width: 100%;
       margin: 20px auto; }
 
+/*hoja contacto*/
 .nosotros {
-  width: 90%;
-  margin: 40px auto;
+  width: 85%;
+  margin: 20px auto;
   font-family: "Raleway", sans-serif;
   color: #f2f2f2;
   text-align: justify; }
   .nosotros strong {
     color: #c6d936; }
 
+/*footer*/
 footer {
-  margin: 20px 0 30px; }
-  footer .navbar2 {
-    width: 90%;
-    margin: 10px auto;
-    font-family: "Montserrat", sans-serif; }
-    footer .navbar2 ul {
-      list-style-type: none;
-      display: flex;
-      padding: 0; }
-    footer .navbar2 a {
-      text-decoration: none;
-      font-size: medium;
-      padding-right: 10px;
+  margin: 20px auto 30px; }
+  footer #cajaContacto {
+    width: 85%;
+    margin: auto; }
+    footer #cajaContacto .navbar2 {
+      width: 90%;
+      margin: 10px auto;
+      font-family: "Montserrat", sans-serif; }
+      footer #cajaContacto .navbar2 ul {
+        list-style-type: none;
+        display: flex;
+        padding: 0; }
+      footer #cajaContacto .navbar2 a {
+        text-decoration: none;
+        font-size: medium;
+        padding-right: 10px;
+        font-family: "Montserrat", sans-serif;
+        color: #f2f2f2;
+        text-align: left; }
+    footer #cajaContacto .contacto {
+      width: 90%;
+      margin: 10px auto;
       font-family: "Montserrat", sans-serif;
+      text-align: justify; }
+    footer #cajaContacto .redes {
+      width: 90%;
+      margin: 10px auto;
+      font-family: "Montserrat", sans-serif; }
+    footer #cajaContacto h2 {
+      color: #c6d936;
+      font-size: 1em; }
+    footer #cajaContacto a,
+    footer #cajaContacto p {
       color: #f2f2f2;
-      text-align: left; }
-  footer .contacto {
-    width: 90%;
-    margin: 10px auto;
-    font-family: "Montserrat", sans-serif;
-    text-align: justify; }
-  footer .redes {
-    width: 90%;
-    margin: 10px auto;
-    font-family: "Montserrat", sans-serif; }
-  footer h2 {
-    color: #c6d936;
-    font-size: 1em; }
-  footer a,
-  footer p {
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: small; }
+      text-decoration: none;
+      font-size: small; }
+    footer #cajaContacto .derechos {
+      width: 90%;
+      margin: 10px auto;
+      display: flex; }
+      footer #cajaContacto .derechos img {
+        height: 70px;
+        margin-left: 4%; }
 
+/*tablet md*/
 @media screen and (min-width: 768px) {
+  header {
+    height: 400px; }
+    header .cabecera {
+      height: 400px; }
+    header .cabeceraTexto {
+      height: 70px;
+      margin-top: 330px;
+      line-height: 0.5em; }
+      header .cabeceraTexto h2 {
+        font-size: 1.5em; }
+      header .cabeceraTexto a {
+        font-size: 1em; }
+    header .navbar img {
+      height: 70px;
+      margin: 10px 1em; }
+    header .offcanvas {
+      width: 200px; }
+    header .nav-item a {
+      font-size: medium; }
   #header2 {
     height: 90px; }
     #header2 .navbar img {
@@ -100,36 +308,47 @@ footer {
       width: 200px; }
     #header2 .nav-item a {
       font-size: medium; }
+  #proyectoInicial {
+    margin-top: 30px; }
+  #proyectosSecundarios {
+    width: 98%;
+    margin: auto; }
+  #fotos {
+    margin: 40px 4%;
+    grid-template-rows: 300px 300px 300px 300px;
+    row-gap: 20px;
+    column-gap: 24px; }
   #blog {
     margin-top: 20px; }
     #blog h5 {
-      font-size: medium; }
-  #cajaContacto {
-    display: flex;
-    margin-top: 20px; }
-    #cajaContacto .navbar2 {
-      width: 10%;
-      margin-top: 0; }
-      #cajaContacto .navbar2 ul {
-        list-style-type: none;
-        display: inline;
-        padding: 0; }
-    #cajaContacto .contacto {
-      width: 43%;
-      margin: 0; }
-    #cajaContacto .redes {
-      width: 25%;
-      margin-top: 0; }
-    #cajaContacto h2 {
-      font-size: 1.2em; }
-    #cajaContacto a,
-    #cajaContacto p {
       font-size: medium; } }
 
+/*pc lg*/
 @media screen and (min-width: 992px) {
+  header {
+    height: 500px; }
+    header .cabecera {
+      height: 500px; }
+    header .cabeceraTexto {
+      height: 90px;
+      margin-top: 410px;
+      line-height: 0.5em; }
+      header .cabeceraTexto h2 {
+        font-size: 2em; }
+      header .cabeceraTexto a {
+        font-size: 1.5em; }
+    header .container-fluid {
+      padding-top: 80px; }
+    header .navbar img {
+      height: 95px;
+      margin: 20px 1em; }
+    header .offcanvas {
+      width: 350px; }
+    header .nav-item a {
+      font-size: larger; }
   #header2 {
     height: 100px;
-    margin-top: 40px; }
+    margin-top: 10px; }
     #header2 .navbar img {
       height: 95px;
       margin: 20px 1em; }
@@ -137,13 +356,25 @@ footer {
       width: 350px; }
     #header2 .nav-item a {
       font-size: larger; }
+  main .galeria .grillaSub2 {
+    height: 530px;
+    margin: 20px 20px;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 250px 250px;
+    grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6"; }
+  #fotos {
+    grid-template-rows: 400px 400px 400px 400px; }
   #blog {
-    margin-top: 10px; }
+    margin-top: 40px; }
     #blog .entrada img {
       width: 60%;
       margin: 20px 20%; }
+  .nosotros {
+    margin-top: 50px; }
+  .formato {
+    width: 75%; }
   #cajaContacto h2 {
-    font-size: 1.5em; }
+    font-size: 1.9em; }
   #cajaContacto a,
   #cajaContacto p {
     font-size: medium; } }

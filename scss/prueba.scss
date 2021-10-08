@@ -1,207 +1,524 @@
 
 @import "_variables.scss";
 
+*{
+    margin: 0;
+    border: 0;
+}
+
 @mixin texto ($fuente, $color, $alineación){
     font-family: $fuente;
     color: $color;
     text-align: $alineación;
 }
 
-#header2{
-    height: 80px;
-    background-image: none;
-    width: 90%;
-    margin: auto;
-
-    .navbar{
-        position: relative;
-        z-index: 50;
-        height: 50px;
-
-        img{
-            z-index: 55;
-            height: 50px;
-        }
-    }
-    .nav-item a{
-        margin-right: 10px;
-        text-decoration: none;
-        font-weight: bolder;
-        font-size: small;
-        @include texto ($fuente2, $amarillo, right);
-    }
-
-}
-
-#blog{
-    width: 90%;
-    height: auto;
-    margin: auto;
-    background-color: $azulClaro;
-    padding: 10px;
-
-    h2{
-        @include texto ($fuente1,$azulOscuro,center);
-        font-weight: bolder;
-    }
-    h5{
-        @include texto ($fuente2,$amarillo,center);
-        font-size: small;
-    }
-    .entrada{
-        width: 100%;
+/*mobile-first
+index header*/
+    header{
+        height: 250px;
+        width: 92%;
         margin: auto;
-        @include texto ($fuente2, $blanco, justify);
-        padding: 20px;
 
-        img{
+        .cabecera{
+            height: 250px;
+            width: 92%;
+            margin: auto;
+            position: absolute;
+            background-image: url(../imgs/proyectos/exoticas.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+        .cabeceraTexto{
+            height: 50px;
             width: 100%;
-            margin: 20px auto;
-        }
-    }
-}
+            padding: 10px;
+            margin-top: 200px;
+            background-color: #0238598c;
+            color: #c6d936;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 0em;
+            text-align: center;
 
-.nosotros{
-    width: 90%;
-    margin: 40px auto;
-    @include texto($fuente2, $blanco, justify);
-
-    strong{
-        color: $amarillo;
-    }
-}
-
-footer{
-    margin: 20px 0 30px;
-
-    .navbar2{
-        width: 90%;
-        margin: 10px auto;
-        font-family: $fuente1;
-        ul{
-            list-style-type: none;
-            display: flex;
-            padding: 0;
-        }
-        a{
-            text-decoration: none;
-            font-size: medium;
-            padding-right: 10px;
-            @include texto ($fuente1, $blanco, left);
-
-        }
-    }
-    .contacto{
-        width: 90%;
-        margin: 10px auto;
-        font-family: $fuente1;
-        text-align: justify;
-    }
-    .redes{
-        width: 90%;
-        margin: 10px auto;
-        font-family: $fuente1;
-    }
-    h2{
-        color: $amarillo;
-        font-size: 1em;
-    }
-    a,
-    p{
-        color: $blanco;
-        text-decoration: none;
-        font-size: small;
-    }
-}
-
-
-
-@media screen and (min-width: 768px){
-    #header2{
-        height: 90px;
-
-        .navbar img{
-            height: 70px;
-            margin: 10px 1em
-        }
-        .offcanvas{
-            width: 200px;
-        }
-        .nav-item a{
-            font-size: medium;
-        }
-    }
-    #blog{
-        margin-top: 20px;
-
-        h5{
-            font-size: medium;
-        }
-    }
-    #cajaContacto{
-        display: flex;
-        margin-top: 20px;
-
-        .navbar2{
-            width: 10%;
-            margin-top: 0;
-
-            ul{
-                list-style-type: none;
-                display: inline;
-                padding: 0;
+            h1{
+                font-size: 1em;
+            }
+            a{
+                font-size: .7em;
+                text-decoration: none;
+                color: #f2f2f2;
             }
         }
-        .contacto{
-            width: 43%;
-            margin: 0;
+
+        .navbar{
+            position: relative;
+            z-index: 50;
+            height: 50px;
+
+            img{
+                z-index: 55;
+                height: 50px;
+            }
+            a{
+                text-align: right;
+                margin-right: 10px;
+                color: #c6d936;
+                text-decoration: none;
+                font-family: 'Raleway', sans-serif;
+                font-weight: bolder;
+                font-size: small;
+            }
         }
-        .redes{
-            width: 25%;
-            margin-top: 0;
-        }
-        h2{
-            font-size: 1.2em;
-        } 
-        a,
-        p{
-            font-size: medium;
+
+        .titulo{
+            background-color: #023859;
+            width: 95%;
+            height: 50px;
+            margin: 20px auto;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+            text-align: center;
+            padding: 10px;
+            letter-spacing: .3em;
+
+            a{
+                text-decoration: none;
+                color: #f2f2f2;
+            }
         }
     }
-}
 
-
-@media screen and (min-width: 992px){
+    /*header hojas*/
     #header2{
-        height: 100px;
-        margin-top: 40px;
+        height: 80px;
+        background-image: none;
+        width: 90%;
+        margin: auto;
 
-        .navbar img{
-            height: 95px;
-            margin: 20px 1em;
-        }
-        .offcanvas{
-            width: 350px;
+        .navbar{
+            position: relative;
+            z-index: 50;
+            height: 50px;
+
+            img{
+                z-index: 55;
+                height: 50px;
+            }
         }
         .nav-item a{
-            font-size: larger;
+            margin-right: 10px;
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: small;
+            @include texto ($fuente2, $amarillo, right);
         }
-    }
-    #blog{
-        margin-top: 10px;
 
-        .entrada img{
-            width: 60%;
-            margin: 20px 20%;
-        }
     }
-    #cajaContacto{
-        h2{
-            font-size: 1.5em;
+
+    main{
+        #grillaPrincipal{
+            display: grid;
+            width: 92%;
+            margin: 20px auto;
+            height: auto;
+            grid-template-columns: 100%;
+            grid-template-areas: "proyectos"
+                                 "galeria"/*
+                                 "blog"*/;
+            .proyectos{
+            grid-area: proyectos;
+            background-color: #2983a6;
+
+                .titulo h2{
+                    color: #c6d936;
+                    text-align: center;
+                    padding-top: .5em;
+                }
+                .titulo a{
+                    text-decoration: none;
+                }
+                .card{
+                    border: none;
+                    height: auto; 
+                    margin-bottom: 1em;
+
+                    img{
+                        height: 200px;
+                    }
+                }
+                .card-body{
+                    background-color: #023859; 
+                    text-align: left; 
+                    font-family: 'Raleway', sans-serif; 
+                    color: #f2f2f2; 
+                    padding: 1em; 
+                    font-size: smaller;
+
+                    .btn{
+                        background-color: #2983a6; 
+                        border: none;
+                    }
+                    h5{
+                        font-size: medium;
+                    }
+                }
+            }
+        }
+
+        .galeria{
+            grid-area: galeria;
+            margin-top: 20px;
+            background-color: #c6d936;
+    
+            .grillaSub2{
+                display: grid;
+                height: 470px;
+                margin: 10px auto;
+                grid-template-columns: 45% 45%;
+                grid-template-rows: 150px 150px 150px;
+                grid-template-areas: "foto1 foto2"
+                                     "foto3 foto4"
+                                     "foto5 foto6";
+                row-gap: 2%;
+                justify-content: space-around;
+                .cuadro1{
+                    grid-area: foto1;
+                    background-image: url(../imgs/galería/foto1.jpeg);
+                }
+                .cuadro2{
+                    grid-area: foto2;
+                    background-image: url(../imgs/galería/foto2.jpeg);
+                }
+                .cuadro3{
+                    grid-area: foto3;
+                    background-image: url(../imgs/galería/foto3.jpeg);
+                }
+                .cuadro4{
+                    grid-area: foto4;
+                    background-image: url(../imgs/galería/foto4.jpeg);
+                }
+                .cuadro5{
+                    grid-area: foto5;
+                    background-image: url(../imgs/galería/foto5.jpeg);
+                }
+                .cuadro6{
+                    grid-area: foto6;
+                    background-image: url(../imgs/galería/foto6.jpeg);
+                }
+                .cuadro1, .cuadro2, .cuadro3, .cuadro4, .cuadro5, .cuadro6{
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+
+            .titulo h2{
+                color: #023859;
+                text-align: center;
+                padding-top: .5em;
+            }
+            .titulo a{
+                text-decoration: none;
+            }
         } 
-        a,
-        p{
-            font-size: medium;
+    }
+
+
+
+/*hoja galería*/
+    #fotos{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-areas:"foto1 foto2"
+                            "foto3 foto7"
+                            "foto4 foto7"
+                            "foto5 foto6";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 200px 200px 200px 200px;
+        row-gap: .5rem;
+        column-gap: .5rem;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+    .foto1{
+        grid-area: foto1;
+    }
+    .foto2{
+        grid-area: foto2;
+    }
+    .foto3{
+        grid-area: foto3;
+    }
+    .foto4{
+        grid-area: foto4;
+    }
+    .foto5{
+        grid-area: foto5;
+    }
+    .foto6{
+        grid-area: foto6;
+    }
+    .foto7{
+        grid-area: foto7;
+    }
+
+/*hoja blog*/
+    #blog{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        background-color: $azulClaro;
+        padding: 10px;
+
+        h2{
+            @include texto ($fuente1,$azulOscuro,center);
+            font-weight: bolder;
+        }
+        h5{
+            @include texto ($fuente2,$amarillo,center);
+            font-size: small;
+        }
+        .entrada{
+            width: 100%;
+            margin: auto;
+            @include texto ($fuente2, $blanco, justify);
+            padding: 20px;
+
+            img{
+                width: 100%;
+                margin: 20px auto;
+            }
         }
     }
-}
+
+/*hoja contacto*/
+    .nosotros{
+        width: 85%;
+        margin: 20px auto;
+        @include texto($fuente2, $blanco, justify);
+
+        strong{
+            color: $amarillo;
+        }
+    }
+
+/*footer*/
+    footer{
+        margin: 20px auto 30px;
+
+        #cajaContacto{
+            width: 85%;
+            margin: auto;
+
+            .navbar2{
+                width: 90%;
+                margin: 10px auto;
+                font-family: $fuente1;
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    padding: 0;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: medium;
+                    padding-right: 10px;
+                    @include texto ($fuente1, $blanco, left);
+                }
+            }
+            .contacto{
+                width: 90%;
+                margin: 10px auto;
+                font-family: $fuente1;
+                text-align: justify;
+            }
+            .redes{
+                width: 90%;
+                margin: 10px auto;
+                font-family: $fuente1;
+            }
+            h2{
+                color: $amarillo;
+                font-size: 1em;
+            }
+            a,
+            p{
+                color: $blanco;
+                text-decoration: none;
+                font-size: small;
+            }
+            .derechos{
+                width: 90%;
+                margin: 10px auto;
+                display: flex;
+
+                img{
+                    height: 70px;
+                    margin-left: 4%;
+                }
+            }
+        }
+    }    
+
+
+/*tablet md*/
+    @media screen and (min-width: 768px){
+        header{
+            height: 400px;
+
+            .cabecera{
+                height: 400px;
+            }
+            .cabeceraTexto{
+                height: 70px;
+                margin-top: 330px;
+                line-height: 0.5em;
+
+                h2{
+                    font-size: 1.5em;
+                }
+                a{
+                    font-size: 1em;
+                }
+            }
+            .navbar img{
+                height: 70px;
+                margin: 10px 1em
+            }
+            .offcanvas{
+                width: 200px;
+            }
+            .nav-item a{
+                font-size: medium;
+            }
+        }
+
+        #header2{
+            height: 90px;
+
+            .navbar img{
+                height: 70px;
+                margin: 10px 1em
+            }
+            .offcanvas{
+                width: 200px;
+            }
+            .nav-item a{
+                font-size: medium;
+            }
+        }
+        
+        #proyectoInicial{
+            margin-top: 30px;
+        }
+        #proyectosSecundarios{
+                width: 98%;
+                margin: auto;
+        }
+        #fotos{
+            margin: 40px 4%;
+            grid-template-rows: 300px 300px 300px 300px;
+            row-gap: 20px;
+            column-gap: 24px;
+        }
+        #blog{
+            margin-top: 20px;
+
+            h5{
+                font-size: medium;
+            }
+        }
+        
+        
+    }
+
+/*pc lg*/
+    @media screen and (min-width: 992px){
+        header{
+            height: 500px;
+
+            .cabecera{
+                height: 500px;
+            }
+            .cabeceraTexto{
+                height: 90px;
+                margin-top: 410px;
+                line-height: 0.5em;
+
+                h2{
+                    font-size: 2em;
+                }
+                a{
+                    font-size: 1.5em;
+                }
+            }
+            .container-fluid{
+                padding-top: 80px; 
+             }
+             .navbar img{
+                 height: 95px;
+                 margin: 20px 1em;
+             }
+             .offcanvas{
+                 width: 350px;
+             }
+             .nav-item a{
+                 font-size: larger;
+             }
+        }
+        
+        #header2{
+            height: 100px;
+            margin-top: 10px;
+
+            .navbar img{
+                height: 95px;
+                margin: 20px 1em;
+            }
+            .offcanvas{
+                width: 350px;
+            }
+            .nav-item a{
+                font-size: larger;
+            }
+        }
+
+        main{
+            .galeria{
+                .grillaSub2{
+                    height: 530px;
+                    margin: 20px 20px;
+                    grid-template-columns: 30% 30% 30%;
+                    grid-template-rows: 250px 250px;
+                    grid-template-areas: "foto1 foto2 foto3"
+                                        "foto4 foto5 foto6";
+                }
+            }
+        }
+        
+        #fotos{
+            grid-template-rows: 400px 400px 400px 400px;
+        }
+        #blog{
+            margin-top: 40px;
+
+            .entrada img{
+                width: 60%;
+                margin: 20px 20%;
+            }
+        }
+        .nosotros{
+            margin-top: 50px;
+        }
+        .formato{
+            width: 75%;
+        }
+        #cajaContacto{
+            h2{
+                font-size: 1.9em;
+            } 
+            a,
+            p{
+                font-size: medium;
+            }
+        }
+    }
