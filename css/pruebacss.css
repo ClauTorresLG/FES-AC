@@ -22,11 +22,11 @@ header {
     width: 100%;
     padding: 10px;
     margin-top: 200px;
-    background-color: #0238598c;
+    background-color: #023859a4;
+    font-family: "Montserrat", sans-serif;
     color: #c6d936;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 0em;
-    text-align: center; }
+    text-align: center;
+    line-height: 0em; }
     header .cabeceraTexto h1 {
       font-size: 1em; }
     header .cabeceraTexto a {
@@ -41,11 +41,11 @@ header {
       z-index: 55;
       height: 50px; }
     header .navbar a {
+      font-family: "Raleway", sans-serif;
+      color: #c6d936;
       text-align: right;
       margin-right: 10px;
-      color: #c6d936;
       text-decoration: none;
-      font-family: 'Raleway', sans-serif;
       font-weight: bolder;
       font-size: small; }
   header .titulo {
@@ -53,9 +53,10 @@ header {
     width: 95%;
     height: 50px;
     margin: 20px auto;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
+    font-family: "Montserrat", sans-serif;
+    color: #c6d936;
     text-align: center;
+    font-weight: bolder;
     padding: 10px;
     letter-spacing: .3em; }
     header .titulo a {
@@ -90,7 +91,7 @@ main #grillaPrincipal {
   margin: 20px auto;
   height: auto;
   grid-template-columns: 100%;
-  grid-template-areas: "proyectos" "galeria"; }
+  grid-template-areas: "proyectos" "galeria" "blog"; }
   main #grillaPrincipal .proyectos {
     grid-area: proyectos;
     background-color: #2983a6; }
@@ -108,9 +109,9 @@ main #grillaPrincipal {
         height: 200px; }
     main #grillaPrincipal .proyectos .card-body {
       background-color: #023859;
-      text-align: left;
-      font-family: 'Raleway', sans-serif;
+      font-family: "Raleway", sans-serif;
       color: #f2f2f2;
+      text-align: left;
       padding: 1em;
       font-size: smaller; }
       main #grillaPrincipal .proyectos .card-body .btn {
@@ -118,47 +119,65 @@ main #grillaPrincipal {
         border: none; }
       main #grillaPrincipal .proyectos .card-body h5 {
         font-size: medium; }
+  main #grillaPrincipal .galeria {
+    grid-area: galeria;
+    margin-top: 20px;
+    background-color: #c6d936; }
+    main #grillaPrincipal .galeria .grillaSub2 {
+      display: grid;
+      height: 470px;
+      margin: 10px auto;
+      grid-template-columns: 45% 45%;
+      grid-template-rows: 150px 150px 150px;
+      grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6";
+      row-gap: 2%;
+      justify-content: space-around; }
+      main #grillaPrincipal .galeria .grillaSub2 .cuadro1 {
+        grid-area: foto1;
+        background-image: url(../imgs/galería/foto1.jpeg); }
+      main #grillaPrincipal .galeria .grillaSub2 .cuadro2 {
+        grid-area: foto2;
+        background-image: url(../imgs/galería/foto2.jpeg); }
+      main #grillaPrincipal .galeria .grillaSub2 .cuadro3 {
+        grid-area: foto3;
+        background-image: url(../imgs/galería/foto3.jpeg); }
+      main #grillaPrincipal .galeria .grillaSub2 .cuadro4 {
+        grid-area: foto4;
+        background-image: url(../imgs/galería/foto4.jpeg); }
+      main #grillaPrincipal .galeria .grillaSub2 .cuadro5 {
+        grid-area: foto5;
+        background-image: url(../imgs/galería/foto5.jpeg); }
+      main #grillaPrincipal .galeria .grillaSub2 .cuadro6 {
+        grid-area: foto6;
+        background-image: url(../imgs/galería/foto6.jpeg); }
+      main #grillaPrincipal .galeria .grillaSub2 .cuadro1, main #grillaPrincipal .galeria .grillaSub2 .cuadro2, main #grillaPrincipal .galeria .grillaSub2 .cuadro3, main #grillaPrincipal .galeria .grillaSub2 .cuadro4, main #grillaPrincipal .galeria .grillaSub2 .cuadro5, main #grillaPrincipal .galeria .grillaSub2 .cuadro6 {
+        background-size: cover;
+        background-position: center; }
+    main #grillaPrincipal .galeria .titulo h2 {
+      color: #023859;
+      text-align: center;
+      padding-top: .5em; }
+    main #grillaPrincipal .galeria .titulo a {
+      text-decoration: none; }
+  main #grillaPrincipal .blog {
+    grid-area: blog;
+    margin-top: 20px; }
 
-main .galeria {
-  grid-area: galeria;
-  margin-top: 20px;
-  background-color: #c6d936; }
-  main .galeria .grillaSub2 {
-    display: grid;
-    height: 470px;
-    margin: 10px auto;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 150px 150px 150px;
-    grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6";
-    row-gap: 2%;
-    justify-content: space-around; }
-    main .galeria .grillaSub2 .cuadro1 {
-      grid-area: foto1;
-      background-image: url(../imgs/galería/foto1.jpeg); }
-    main .galeria .grillaSub2 .cuadro2 {
-      grid-area: foto2;
-      background-image: url(../imgs/galería/foto2.jpeg); }
-    main .galeria .grillaSub2 .cuadro3 {
-      grid-area: foto3;
-      background-image: url(../imgs/galería/foto3.jpeg); }
-    main .galeria .grillaSub2 .cuadro4 {
-      grid-area: foto4;
-      background-image: url(../imgs/galería/foto4.jpeg); }
-    main .galeria .grillaSub2 .cuadro5 {
-      grid-area: foto5;
-      background-image: url(../imgs/galería/foto5.jpeg); }
-    main .galeria .grillaSub2 .cuadro6 {
-      grid-area: foto6;
-      background-image: url(../imgs/galería/foto6.jpeg); }
-    main .galeria .grillaSub2 .cuadro1, main .galeria .grillaSub2 .cuadro2, main .galeria .grillaSub2 .cuadro3, main .galeria .grillaSub2 .cuadro4, main .galeria .grillaSub2 .cuadro5, main .galeria .grillaSub2 .cuadro6 {
-      background-size: cover;
-      background-position: center; }
-  main .galeria .titulo h2 {
-    color: #023859;
-    text-align: center;
-    padding-top: .5em; }
-  main .galeria .titulo a {
-    text-decoration: none; }
+/*hoja proyectos*/
+.intro {
+  width: 90%;
+  margin: auto; }
+  .intro h1 {
+    font-family: "Raleway", sans-serif;
+    color: #c6d936;
+    text-align: left;
+    font-size: medium; }
+  .intro p {
+    font-family: "Montserrat", sans-serif;
+    color: #f2f2f2;
+    text-align: justify;
+    line-height: 1.2em;
+    font-size: small; }
 
 /*hoja galería*/
 #fotos {
@@ -234,34 +253,10 @@ main .galeria {
 
 /*footer*/
 footer {
-  margin: 20px auto 30px; }
+  margin: 10px 20px 10px; }
   footer #cajaContacto {
-    width: 85%;
+    width: 100%;
     margin: auto; }
-    footer #cajaContacto .navbar2 {
-      width: 90%;
-      margin: 10px auto;
-      font-family: "Montserrat", sans-serif; }
-      footer #cajaContacto .navbar2 ul {
-        list-style-type: none;
-        display: flex;
-        padding: 0; }
-      footer #cajaContacto .navbar2 a {
-        text-decoration: none;
-        font-size: medium;
-        padding-right: 10px;
-        font-family: "Montserrat", sans-serif;
-        color: #f2f2f2;
-        text-align: left; }
-    footer #cajaContacto .contacto {
-      width: 90%;
-      margin: 10px auto;
-      font-family: "Montserrat", sans-serif;
-      text-align: justify; }
-    footer #cajaContacto .redes {
-      width: 90%;
-      margin: 10px auto;
-      font-family: "Montserrat", sans-serif; }
     footer #cajaContacto h2 {
       color: #c6d936;
       font-size: 1em; }
@@ -270,13 +265,39 @@ footer {
       color: #f2f2f2;
       text-decoration: none;
       font-size: small; }
+    footer #cajaContacto .navbar2,
+    footer #cajaContacto .contacto,
+    footer #cajaContacto .redes,
     footer #cajaContacto .derechos {
       width: 90%;
-      margin: 10px auto;
-      display: flex; }
+      margin: 5px auto;
+      font-family: "Montserrat", sans-serif; }
+      footer #cajaContacto .navbar2 ul,
+      footer #cajaContacto .contacto ul,
+      footer #cajaContacto .redes ul,
+      footer #cajaContacto .derechos ul {
+        list-style-type: none;
+        display: flex;
+        padding: 0; }
+      footer #cajaContacto .navbar2 a,
+      footer #cajaContacto .contacto a,
+      footer #cajaContacto .redes a,
+      footer #cajaContacto .derechos a {
+        text-decoration: none;
+        padding-right: 10px;
+        font-family: "Montserrat", sans-serif;
+        color: #f2f2f2;
+        text-align: left; }
+      footer #cajaContacto .navbar2 img,
+      footer #cajaContacto .contacto img,
+      footer #cajaContacto .redes img,
       footer #cajaContacto .derechos img {
-        height: 70px;
-        margin-left: 4%; }
+        margin-top: 10px;
+        height: 50px; }
+    footer #cajaContacto .derechos p {
+      float: right;
+      padding: 40px 10px;
+      font-size: xx-small; }
 
 /*tablet md*/
 @media screen and (min-width: 768px) {
@@ -308,16 +329,34 @@ footer {
       width: 200px; }
     #header2 .nav-item a {
       font-size: medium; }
+  main #grillaPrincipal .proyectos .card {
+    height: 400px;
+    margin-bottom: 10px; }
+    main #grillaPrincipal .proyectos .card img {
+      height: 160px; }
+    main #grillaPrincipal .proyectos .card a {
+      margin-bottom: 0; }
+  main #grillaPrincipal .galeria .grillaSub2 {
+    height: 640px;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: "foto1 foto1 foto2 foto3" "foto1 foto1 foto4 foto4" "foto5 foto6 foto4 foto4";
+    column-gap: 1%; }
+  .intro {
+    margin-top: 30px; }
   #proyectoInicial {
     margin-top: 30px; }
+    #proyectoInicial .card-body {
+      height: 360px; }
+      #proyectoInicial .card-body img {
+        float: left; }
+      #proyectoInicial .card-body p {
+        padding-left: 330px; }
   #proyectosSecundarios {
     width: 98%;
     margin: auto; }
-  main .galeria .grillaSub2 {
-    height: 560px;
-    grid-template-columns: 22% 22% 22% 22%;
-    grid-template-rows: 180px 180px 180px;
-    grid-template-areas: "foto1 foto1 foto2 foto3" "foto1 foto1 foto4 foto4" "foto5 foto6 foto4 foto4"; }
+    #proyectosSecundarios .card-body {
+      height: 380px; }
   #fotos {
     margin: 40px 4%;
     grid-template-rows: 300px 300px 300px 300px;
@@ -326,14 +365,18 @@ footer {
   #blog {
     margin-top: 20px; }
     #blog h5 {
-      font-size: medium; } }
+      font-size: medium; }
+  .nosotros {
+    margin-top: 40px; } }
 
 /*pc lg*/
 @media screen and (min-width: 992px) {
   header {
-    height: 500px; }
+    width: 95%;
+    height: 550px; }
     header .cabecera {
-      height: 500px; }
+      width: 95%;
+      height: 550px; }
     header .cabeceraTexto {
       height: 90px;
       margin-top: 410px;
@@ -352,6 +395,7 @@ footer {
     header .nav-item a {
       font-size: larger; }
   #header2 {
+    width: 95%;
     height: 100px;
     margin-top: 10px; }
     #header2 .navbar img {
@@ -361,11 +405,36 @@ footer {
       width: 350px; }
     #header2 .nav-item a {
       font-size: larger; }
-  main .galeria .grillaSub2 {
-    height: 670px;
-    margin: 20px 20px;
-    grid-template-columns: 24% 24% 24% 24%;
-    grid-template-rows: 210px 210px 210px; }
+  main #grillaPrincipal {
+    width: 95%; }
+    main #grillaPrincipal .proyectos .card {
+      height: 450px; }
+      main #grillaPrincipal .proyectos .card img {
+        height: 260px; }
+    main #grillaPrincipal .galeria .grillaSub2 {
+      height: 670px;
+      margin: 20px 20px;
+      grid-template-columns: 24% 24% 24% 24%;
+      grid-template-rows: 210px 210px 210px; }
+  .intro {
+    width: 85%;
+    margin-top: 60px; }
+    .intro h1 {
+      font-size: large; }
+    .intro p {
+      font-size: medium; }
+  #proyectoInicial .card-body {
+    height: 360px; }
+    #proyectoInicial .card-body img {
+      height: 300px;
+      padding-left: 40px; }
+    #proyectoInicial .card-body p {
+      padding-left: 330px; }
+  #proyectosSecundarios {
+    width: 97%;
+    margin: auto; }
+    #proyectosSecundarios .card-body {
+      height: 280px; }
   #fotos {
     grid-template-rows: 400px 400px 400px 400px; }
   #blog {
@@ -375,10 +444,24 @@ footer {
       margin: 20px 20%; }
   .nosotros {
     margin-top: 50px; }
-  .formato {
-    width: 75%; }
-  #cajaContacto h2 {
-    font-size: 1.9em; }
-  #cajaContacto a,
-  #cajaContacto p {
-    font-size: medium; } }
+  footer #cajaContacto h2 {
+    font-size: 1.2em; }
+  footer #cajaContacto a,
+  footer #cajaContacto p {
+    font-size: medium; }
+  footer #cajaContacto .navbar2 img,
+  footer #cajaContacto .contacto img,
+  footer #cajaContacto .redes img,
+  footer #cajaContacto .derechos img {
+    height: 70px; }
+  footer #cajaContacto .navbar2 p,
+  footer #cajaContacto .contacto p,
+  footer #cajaContacto .redes p,
+  footer #cajaContacto .derechos p {
+    float: none;
+    padding: 0;
+    font-size: medium; }
+  footer #cajaContacto .derechos p {
+    float: right;
+    font-size: small;
+    padding-top: 40px; } }
