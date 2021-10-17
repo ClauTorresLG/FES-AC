@@ -1,0 +1,498 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  border: 0; }
+
+/*mobile-first
+index header*/
+header {
+  height: 250px;
+  width: 90%;
+  margin: auto; }
+  header .cabecera {
+    height: 250px;
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    background-image: url(../imgs/proyectos/exoticas.jpeg);
+    background-size: cover;
+    background-position: center; }
+  header .cabeceraTexto {
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 200px;
+    background-color: #023859b9;
+    /*color con transparencia*/
+    font-family: "Montserrat", sans-serif;
+    color: #c6d936;
+    text-align: center;
+    line-height: 0em; }
+    header .cabeceraTexto h1 {
+      font-size: 1em; }
+    header .cabeceraTexto a {
+      font-size: .7em;
+      text-decoration: none;
+      color: #f2f2f2; }
+  header .navbar {
+    position: relative;
+    z-index: 50;
+    height: 50px; }
+    header .navbar img {
+      z-index: 55;
+      height: 50px; }
+    header .navbar li :hover {
+      color: #2983a6; }
+    header .navbar a {
+      font-family: "Raleway", sans-serif;
+      color: #c6d936;
+      text-align: right;
+      margin-right: 10px;
+      text-decoration: none;
+      font-weight: bolder;
+      font-size: small; }
+  header .titulo {
+    background-color: #023859;
+    width: 95%;
+    height: 50px;
+    margin: 20px auto;
+    font-family: "Montserrat", sans-serif;
+    color: #c6d936;
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px;
+    letter-spacing: .3em; }
+    header .titulo a {
+      text-decoration: none;
+      color: #f2f2f2; }
+
+/*header hojas*/
+#header2 {
+  height: 80px;
+  background-image: none;
+  width: 90%;
+  margin: auto; }
+  #header2 .navbar {
+    position: relative;
+    z-index: 50;
+    height: 50px; }
+    #header2 .navbar li :hover {
+      color: #2983a6; }
+    #header2 .navbar img {
+      z-index: 55;
+      height: 50px; }
+  #header2 .nav-item a {
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: small;
+    font-family: "Raleway", sans-serif;
+    color: #c6d936;
+    text-align: right; }
+
+main #grillaPrincipal {
+  display: grid;
+  width: 92%;
+  margin: 20px auto;
+  height: auto;
+  grid-template-columns: 100%;
+  grid-template-areas: "proyectos" "galeria" "blog"; }
+  main #grillaPrincipal .proyectos {
+    grid-area: proyectos;
+    background-color: #2983a6; }
+    main #grillaPrincipal .proyectos .titulo h2 {
+      color: #c6d936;
+      text-align: center;
+      padding-top: .5em; }
+    main #grillaPrincipal .proyectos .titulo a {
+      text-decoration: none; }
+    main #grillaPrincipal .proyectos .card {
+      border: none;
+      height: auto;
+      margin-bottom: 1em; }
+      main #grillaPrincipal .proyectos .card img {
+        height: 200px; }
+    main #grillaPrincipal .proyectos .card-body {
+      background-color: #023859;
+      font-family: "Raleway", sans-serif;
+      color: #f2f2f2;
+      text-align: left;
+      padding: 1em;
+      font-size: smaller; }
+      main #grillaPrincipal .proyectos .card-body .btn {
+        background-color: #2983a6;
+        border: none; }
+      main #grillaPrincipal .proyectos .card-body h5 {
+        font-size: medium; }
+  main #grillaPrincipal .galeria {
+    grid-area: galeria;
+    margin-top: 20px;
+    background-color: #c6d936; }
+    main #grillaPrincipal .galeria .grillaSub2 {
+      display: grid;
+      height: 470px;
+      margin: 10px auto;
+      grid-template-columns: 45% 45%;
+      grid-template-rows: 150px 150px 150px;
+      grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6";
+      row-gap: 2%;
+      justify-content: space-around; }
+      main #grillaPrincipal .galeria .grillaSub2 .cuadro1 {
+        grid-area: foto1;
+        background-image: url(../imgs/galeria/foto1.jpeg); }
+      main #grillaPrincipal .galeria .grillaSub2 .cuadro2 {
+        grid-area: foto2;
+        background-image: url(../imgs/galeria/foto2.jpeg); }
+      main #grillaPrincipal .galeria .grillaSub2 .cuadro3 {
+        grid-area: foto3;
+        background-image: url(../imgs/galeria/foto3.jpeg); }
+      main #grillaPrincipal .galeria .grillaSub2 .cuadro4 {
+        grid-area: foto4;
+        background-image: url(../imgs/galeria/foto4.jpeg); }
+      main #grillaPrincipal .galeria .grillaSub2 .cuadro5 {
+        grid-area: foto5;
+        background-image: url(../imgs/galeria/foto5.jpeg); }
+      main #grillaPrincipal .galeria .grillaSub2 .cuadro6 {
+        grid-area: foto6;
+        background-image: url(../imgs/galeria/foto6.jpeg); }
+      main #grillaPrincipal .galeria .grillaSub2 .cuadro1, main #grillaPrincipal .galeria .grillaSub2 .cuadro2, main #grillaPrincipal .galeria .grillaSub2 .cuadro3, main #grillaPrincipal .galeria .grillaSub2 .cuadro4, main #grillaPrincipal .galeria .grillaSub2 .cuadro5, main #grillaPrincipal .galeria .grillaSub2 .cuadro6 {
+        background-size: cover;
+        background-position: center; }
+    main #grillaPrincipal .galeria .titulo h2 {
+      color: #023859;
+      text-align: center;
+      padding-top: .5em; }
+    main #grillaPrincipal .galeria .titulo a {
+      text-decoration: none; }
+  main #grillaPrincipal .blog {
+    grid-area: blog;
+    margin-top: 20px; }
+
+/*hoja proyectos*/
+.intro {
+  width: 90%;
+  margin: auto; }
+  .intro h1 {
+    font-family: "Raleway", sans-serif;
+    color: #c6d936;
+    text-align: left;
+    font-size: medium; }
+  .intro p {
+    font-family: "Montserrat", sans-serif;
+    color: #f2f2f2;
+    text-align: justify;
+    line-height: 1.2em;
+    font-size: small; }
+
+/*hoja galería*/
+#fotos {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "foto1 foto2" "foto3 foto7" "foto4 foto7" "foto5 foto6";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 200px 200px 200px 200px;
+  row-gap: .5rem;
+  column-gap: .5rem;
+  justify-items: stretch;
+  align-items: stretch;
+  overflow-x: hidden; }
+  #fotos .foto1 {
+    grid-area: foto1; }
+  #fotos .foto2 {
+    grid-area: foto2; }
+  #fotos .foto3 {
+    grid-area: foto3; }
+  #fotos .foto4 {
+    grid-area: foto4; }
+  #fotos .foto5 {
+    grid-area: foto5; }
+  #fotos .foto6 {
+    grid-area: foto6; }
+  #fotos .foto7 {
+    grid-area: foto7; }
+
+/*hoja blog*/
+#blog {
+  width: 90%;
+  margin: auto;
+  height: auto;
+  background-color: #2983a6;
+  padding: 10px; }
+  #blog h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #023859;
+    text-align: center;
+    font-weight: bolder; }
+  #blog h5 {
+    font-family: "Raleway", sans-serif;
+    color: #c6d936;
+    text-align: center;
+    font-size: small; }
+  #blog .entrada {
+    width: 100%;
+    margin: auto;
+    font-family: "Raleway", sans-serif;
+    color: #f2f2f2;
+    text-align: justify;
+    padding: 20px; }
+    #blog .entrada img {
+      width: 100%;
+      margin: 20px auto; }
+
+/*hoja contacto*/
+.nosotros {
+  width: 85%;
+  margin: 20px auto;
+  font-family: "Raleway", sans-serif;
+  color: #f2f2f2;
+  text-align: justify; }
+  .nosotros strong {
+    color: #c6d936; }
+
+/*footer*/
+footer {
+  margin: 10px 10px 0; }
+  footer .navbar2 {
+    width: 100%;
+    margin: auto; }
+    footer .navbar2 ul {
+      list-style-type: none;
+      display: flex;
+      padding: 0 5px;
+      justify-content: space-evenly; }
+    footer .navbar2 li :hover {
+      color: #2983a6; }
+    footer .navbar2 a {
+      text-decoration: none;
+      padding-right: 10px;
+      font-family: "Montserrat", sans-serif;
+      color: #c6d936;
+      text-align: left; }
+  footer #cajaContacto {
+    width: 100%;
+    margin: auto;
+    display: flex; }
+    footer #cajaContacto .datosContacto {
+      width: 50%;
+      font-family: "Montserrat", sans-serif;
+      color: #f2f2f2;
+      text-align: left;
+      font-size: .8rem;
+      padding: 10px 0 0 10px;
+      line-height: .2em; }
+    footer #cajaContacto .redes {
+      width: 60%;
+      font-family: "Montserrat", sans-serif;
+      color: #c6d936;
+      text-align: right;
+      padding: 10px 20px 0; }
+      footer #cajaContacto .redes h2 {
+        font-size: 1rem; }
+      footer #cajaContacto .redes svg {
+        color: #f2f2f2;
+        margin-left: 10px; }
+        footer #cajaContacto .redes svg :hover {
+          color: #2983a6; }
+  footer #baseFooter {
+    display: flex; }
+    footer #baseFooter .logoBajo {
+      width: 250px;
+      height: 55px;
+      margin: 10px 10px 30px;
+      background-image: url(../imgs/logoFes4.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    footer #baseFooter .copyRight {
+      width: 70%;
+      font-family: "Montserrat", sans-serif;
+      color: #f2f2f2;
+      text-align: right;
+      font-size: .8rem;
+      padding: 20px; }
+
+/*tablet md*/
+@media screen and (min-width: 768px) {
+  header {
+    height: 400px; }
+    header .cabecera {
+      height: 400px; }
+    header .cabeceraTexto {
+      height: 70px;
+      margin-top: 330px;
+      line-height: 0.5em; }
+      header .cabeceraTexto h2 {
+        font-size: 1.5em; }
+      header .cabeceraTexto a {
+        font-size: 1em; }
+    header .navbar img {
+      height: 70px;
+      margin: 10px 1em; }
+    header .offcanvas {
+      width: 200px; }
+    header .nav-item a {
+      font-size: medium; }
+  #header2 {
+    height: 90px; }
+    #header2 .navbar img {
+      height: 70px;
+      margin: 10px 1em; }
+    #header2 .offcanvas {
+      width: 200px; }
+    #header2 .nav-item a {
+      font-size: medium; }
+  main #grillaPrincipal .proyectos .card {
+    height: 400px;
+    margin-bottom: 10px; }
+    main #grillaPrincipal .proyectos .card img {
+      height: 160px; }
+    main #grillaPrincipal .proyectos .card a {
+      margin-bottom: 0; }
+  main #grillaPrincipal .galeria .grillaSub2 {
+    height: 640px;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: "foto1 foto1 foto2 foto3" "foto1 foto1 foto4 foto4" "foto5 foto6 foto4 foto4";
+    column-gap: 1%; }
+  .intro {
+    margin-top: 30px; }
+  #proyectoInicial {
+    margin-top: 30px; }
+    #proyectoInicial .card-body {
+      height: 360px; }
+      #proyectoInicial .card-body img {
+        float: left; }
+      #proyectoInicial .card-body p {
+        padding-left: 330px; }
+  #proyectosSecundarios {
+    width: 90%;
+    margin: auto; }
+    #proyectosSecundarios .card-body {
+      height: 380px; }
+  #fotos {
+    margin: 40px 4%;
+    grid-template-rows: 300px 300px 300px 300px;
+    row-gap: 20px;
+    column-gap: 24px; }
+  #blog {
+    margin-top: 20px; }
+    #blog h5 {
+      font-size: medium; }
+  .nosotros {
+    margin-top: 40px; }
+  footer {
+    margin: 10px 20px 0; }
+    footer .navbar2 a {
+      font-size: medium; }
+    footer #cajaContacto .datosContacto {
+      padding-left: 40px;
+      font-size: medium; }
+    footer #cajaContacto .redes {
+      padding-right: 40px; }
+      footer #cajaContacto .redes h2 {
+        font-size: 1.2rem; }
+    footer #baseFooter {
+      display: flex; }
+      footer #baseFooter .logoBajo {
+        margin-left: 40px; }
+      footer #baseFooter .copyRight {
+        padding: 40px; } }
+
+/*pc lg*/
+@media screen and (min-width: 992px) {
+  header {
+    width: 95%;
+    height: 550px; }
+    header .cabecera {
+      width: 95%;
+      height: 550px; }
+    header .cabeceraTexto {
+      height: 90px;
+      margin-top: 460px;
+      line-height: 0.5em; }
+      header .cabeceraTexto h2 {
+        font-size: 2em; }
+      header .cabeceraTexto a {
+        font-size: 1.5em; }
+    header .container-fluid {
+      padding-top: 80px; }
+    header .navbar img {
+      height: 95px;
+      margin: 20px 1em; }
+    header .offcanvas {
+      width: 350px; }
+      header .offcanvas .offcanvas-body {
+        margin-top: 50px; }
+    header .nav-item a {
+      font-size: larger; }
+  #header2 {
+    width: 95%;
+    height: 100px;
+    margin-top: 10px; }
+    #header2 .navbar img {
+      height: 95px;
+      margin: 20px 1em; }
+    #header2 .offcanvas {
+      width: 350px; }
+    #header2 .nav-item a {
+      font-size: larger; }
+  main #grillaPrincipal {
+    width: 95%; }
+    main #grillaPrincipal .proyectos .card {
+      height: 450px; }
+      main #grillaPrincipal .proyectos .card img {
+        height: 260px; }
+    main #grillaPrincipal .galeria .grillaSub2 {
+      height: 670px;
+      margin: 20px 20px;
+      grid-template-columns: 24% 24% 24% 24%;
+      grid-template-rows: 210px 210px 210px; }
+  .intro {
+    width: 85%;
+    margin-top: 60px; }
+    .intro h1 {
+      font-size: large; }
+    .intro p {
+      font-size: medium; }
+  #proyectoInicial .card-body {
+    height: 360px; }
+    #proyectoInicial .card-body img {
+      height: 300px;
+      padding-left: 40px; }
+    #proyectoInicial .card-body p {
+      padding-left: 330px; }
+  #proyectosSecundarios {
+    width: 97%;
+    margin: auto; }
+    #proyectosSecundarios .card-body {
+      height: 280px; }
+  #fotos {
+    grid-template-rows: 400px 400px 400px 400px; }
+  #blog {
+    margin-top: 40px; }
+    #blog .entrada img {
+      width: 60%;
+      margin: 20px 20%; }
+  .nosotros {
+    margin-top: 50px; }
+  footer {
+    margin: 10px 40px 0;
+    display: flex; }
+    footer #cajaContacto .datosContacto {
+      width: 80%;
+      padding-left: 20px;
+      font-size: medium; }
+    footer #cajaContacto .redes {
+      text-align: left;
+      padding-right: 20px; }
+      footer #cajaContacto .redes h2 {
+        font-size: 1.2rem; }
+    footer #baseFooter {
+      display: flex; }
+      footer #baseFooter .logoBajo {
+        margin: 30px 0;
+        width: 180px; }
+      footer #baseFooter .copyRight {
+        width: 60%;
+        padding: 40px 20px 0 0;
+        text-align: left; } }

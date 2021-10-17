@@ -4,69 +4,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Fomento Ecológico y Social AC. Si quieres publicar en nuestro blog, necesitas asesoría para tu proyecto, o te interesa saber más de nuestra labor escríbenos.">
+    <meta name="keywords" content="propuestas de desarrollo sustentable">
     
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estiloscss.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@400;500&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
     <title>Contacto</title>
 </head>
 
-<body class="contacto2">
-    <header id="cabecera">
-      <img src="../imgs/logoFes.png" alt="" id="logo">
-      <nav id="menu">
+<body style="background-color: #023859;">
+
+  <header id="header2">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../imgs/logoFes4.png" alt="logo Fomento Ecológico y Social AC">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" style="margin: 20px 10px 0; color: #c6d936; font-size: medium;">
+          <span class="navbar-toggler-icon" style="width: auto; height: auto;">menú</span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel" style="width: 200px;">
+          <div class="offcanvas-header" style="background-color: #c6d936; text-align: right; font-family: 'Raleway', sans-serif; color: #023859;">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">menú</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" style="background-color: #023859e5; text-align: left; font-size: medium;">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header> 
+
+  <div class="nosotros">
+    <p><strong>Fomento Ecológico y Social</strong> busca una transición armoniosa de equilibrio entre sociedad y naturaleza. </p>
+    <p>Queremos conocerte. Si quieres publicar en nuestro blog, necesitas asesoría para tu proyecto, o te interesa saber más de nuestra labor escríbenos: </p>
+  </div>
+
+  <form class="formato" style="width: 92%; margin: 10px auto; background-color: #2983a6; padding: 20px 0;">
+    <div class="mb-3" style="width: 80%; margin-left: 20px;">
+      <label for="exampleFormControlTextarea1" class="form-label">Nombre completo</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+    </div>
+    <div class="mb-3" style="width: 80%; margin-left: 20px;">
+      <label for="exampleFormControlInput1" class="form-label">Dirección de correo</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3" style="width: 80%; margin-left: 20px;">
+      <label for="exampleFormControlTextarea1" class="form-label">Comparte tu mensaje</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" style="background-color: #023859; margin-left: 20px;">Enviar</button>
+  </form>
+
+  <footer>
+    <div class="navbar2">
+      <nav>
         <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="proyectos.html">Proyectos</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="">Contacto</a></li>
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="proyectos.html">Proyectos</a>
+          </li>
+          <li>
+            <a href="galeria.html">Galería</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="">Contacto</a>
+          </li>
         </ul>
       </nav>
-    </header>
+    </div> 
 
-    <form action="" method="" id="cont">
-      <fieldset>
-        <legend class="titulo">Contáctanos</legend>
-          <label for="nombreUsuario">Nombre</label>
-          <input type="text" placeholder="Ingrese su nombre" id="nombreUsuario">
-          <br>
-          <label for="email">Email</label>
-          <input type="text" placeholder="Escriba su email" id="email">
-          <br>
+    <div id="cajaContacto">
+      <div class="datosContacto">
+        <p>Contacto</p>
+        <p>contacto@fes-ac.com.mx</p>
+        <p>+52-55-5581-6593</p>
+        <p>CDMX, México</p>
+      </div>
+      <div class="redes">
+        <h2>Síguenos</h2>
+        <a href="https://www.facebook.com/Fomento-Ecol%C3%B3gico-y-Social-AC-677898958927851" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg>
+        </a>
+        <a href="https://twitter.com/FesAC13" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
 
-        Seleccionar el área a contactar
-          <select name="" id="">
-              <option value="">Proyectos</option>
-              <option value="">Divulgación</option>
-              <option value="">Blog</option>
-          </select>  
-          <br>  
+    <div id="baseFooter">
+      <a href="../index.html"><div class="logoBajo"></div></a>
+      <div class="copyRight">
+        <p>Todos los derechos reservados</p>
+      </div>
+    </div>
 
-        Mensaje:
-        <br>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+  </footer>   
 
-        <br>
-        Estoy de acuerdo en recibir noticias por email
-          si
-          <input type="radio" name="cafe">
-          no
-          <input type="radio" name="cafe">
-        
-        <br>
-        He leído términos y condiciones
-        <input type="checkbox">
-
-        <br>
-        <input type="reset" class="reset">
-        <input type="submit" value="Enviar ahora" class="enviar">
-
-
-      </fieldset>     
-    </form>    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 
 </body>
 </html>

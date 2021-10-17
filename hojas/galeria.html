@@ -4,44 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Fomento Ecológico y Social AC. Galería fotográfica perteneciente a los proyectos realizados por la Asociación, con contenido exclusivo de las especies en estudio.">
+    <meta name="keywords" content="especies exóticas invasoras">
     
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estiloscss.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@400;500&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
     <title>Galería</title>
 </head>
-<body class="galeria">
-    <header id="cabecera">
-      <img src="../imgs/logoFes.png" alt="" id="logo">
-      <nav id="menu">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="proyectos.html">Proyectos</a></li>
-          <li><a href="">Galería</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <div id="fotos">
-      <img src="../imgs/foto1.jpeg" alt="" class="foto1" data-aos="fade-right">
-      <img src="../imgs/foto2.jpeg" alt="" class="foto2" data-aos="fade-left">
-      <img src="../imgs/foto3.jpeg" alt="" class="foto3" data-aos="fade-right">
-      <img src="../imgs/foto4.jpeg" alt="" class="foto4" data-aos="fade-right">
-      <img src="../imgs/foto5.jpeg" alt="" class="foto5" data-aos="fade-right">
-      <img src="../imgs/foto6.jpeg" alt="" class="foto6" data-aos="fade-left">
-      <img src="../imgs/foto7.jpeg" alt="" class="foto7" data-aos="fade-left">
-    </div>
+<body style="background-color: #023859;">
+ 
+  <header id="header2">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../imgs/logoFes4.png" alt="logo Fomento Ecológico y Social AC">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" style="margin: 20px 10px 0; color: #c6d936; font-size: medium;">
+          <span class="navbar-toggler-icon" style="width: auto; height: auto;">menú</span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel" style="width: 200px;">
+          <div class="offcanvas-header" style="background-color: #c6d936; text-align: right; font-family: 'Raleway', sans-serif; color: #023859;">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">menú</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" style="background-color: #023859e5; text-align: left; font-size: medium;">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header> 
+
+  <div id="fotos">
+    <img src="../imgs/galeria/foto1.jpeg" alt="Libélula Serpiente de Veracruz (Erpetogomphus viperinus)" class="foto1" data-aos="fade-right">
+    <img src="../imgs/galeria/foto2.jpeg" alt="Picogrueso Pechirrosado (Pheucticus ludovicianus)" class="foto2" data-aos="fade-left">
+    <img src="../imgs/galeria/foto3.jpeg" alt="Guacamaya Roja (Ara macao)" class="foto3" data-aos="fade-right">
+    <img src="../imgs/galeria/foto4.jpeg" alt="Avispero Cardenalito (Piranga rubra)" class="foto4" data-aos="fade-right">
+    <img src="../imgs/galeria/foto5.jpeg" alt="Libélula Serpiente de Veracruz (Erpetogomphus viperinus)" class="foto5" data-aos="fade-right">
+    <img src="../imgs/galeria/foto6.jpeg" alt="Libélula Serpiente de Veracruz (Erpetogomphus viperinus)" class="foto6" data-aos="fade-left">
+    <img src="../imgs/galeria/foto7.jpeg" alt="Momoto Cejas Azules (Eumomota superciliosa)" class="foto7" data-aos="fade-left">
+  </div>
 
   
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <footer>
+    <div class="navbar2">
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="proyectos.html">Proyectos</a>
+          </li>
+          <li>
+            <a href="">Galería</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>  
+
+    <div id="cajaContacto">
+      <div class="datosContacto">
+        <p>Contacto</p>
+        <p>contacto@fes-ac.com.mx</p>
+        <p>+52-55-5581-6593</p>
+        <p>CDMX, México</p>
+      </div>
+      <div class="redes">
+        <h2>Síguenos</h2>
+        <a href="https://www.facebook.com/Fomento-Ecol%C3%B3gico-y-Social-AC-677898958927851" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg>
+        </a>
+        <a href="https://twitter.com/FesAC13" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div id="baseFooter">
+      <a href="../index.html"><div class="logoBajo"></div></a>
+      <div class="copyRight">
+        <p>Todos los derechos reservados</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 
 </body>
 </html>
