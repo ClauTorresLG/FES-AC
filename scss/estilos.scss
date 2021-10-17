@@ -11,18 +11,25 @@
     color: $color;
     text-align: $alineación;
 }
+@mixin width90 ($width90, $marginAuto){
+    width: $width90;
+    margin: $marginAuto;
+}
+@mixin width92 ($width92, $marginAuto){
+    width: $width90;
+    margin: $marginAuto;
+}
+
 
 /*mobile-first
 index header*/
     header{
         height: 250px;
-        width: 92%;
-        margin: auto;
+        @include width92 ($width92, $marginAuto);
 
         .cabecera{
             height: 250px;
-            width: 92%;
-            margin: auto;
+            @include width92 ($width92, $marginAuto);
             position: absolute;
             background-image: url(../imgs/proyectos/exoticas.jpeg);
             background-size: cover;
@@ -33,7 +40,7 @@ index header*/
             width: 100%;
             padding: 10px;
             margin-top: 200px;
-            background-color: #023859a4;
+            background-color: #023859b9; /*color con transparencia*/
             @include texto ($fuente1, $amarillo, center);
             line-height: 0em;
 
@@ -56,6 +63,11 @@ index header*/
                 z-index: 55;
                 height: 50px;
             }
+            li{
+                :hover{
+                    color: $azulClaro;
+                }
+            }
             a{
                 @include texto ($fuente2, $amarillo, right);
                 margin-right: 10px;
@@ -63,11 +75,12 @@ index header*/
                 font-weight: bolder;
                 font-size: small;
             }
+            
         }
 
         .titulo{
             background-color: $azulOscuro;
-            width: 95%;
+            width: $width95;
             height: 50px;
             margin: 20px auto;
             @include texto ($fuente1, $amarillo, center);
@@ -86,14 +99,17 @@ index header*/
     #header2{
         height: 80px;
         background-image: none;
-        width: 90%;
-        margin: auto;
+        @include width90 ($width90, $marginAuto);
 
         .navbar{
             position: relative;
             z-index: 50;
             height: 50px;
-
+            li{
+                :hover{
+                    color: $azulClaro;
+                }
+            }
             img{
                 z-index: 55;
                 height: 50px;
@@ -112,7 +128,7 @@ index header*/
     main{
         #grillaPrincipal{
             display: grid;
-            width: 92%;
+            width: $width92;
             margin: 20px auto;
             height: auto;
             grid-template-columns: 100%;
@@ -173,27 +189,27 @@ index header*/
                     justify-content: space-around;
                     .cuadro1{
                         grid-area: foto1;
-                        background-image: url(../imgs/galería/foto1.jpeg);
+                        background-image: url(../imgs/galeria/foto1.jpeg);
                     }
                     .cuadro2{
                         grid-area: foto2;
-                        background-image: url(../imgs/galería/foto2.jpeg);
+                        background-image: url(../imgs/galeria/foto2.jpeg);
                     }
                     .cuadro3{
                         grid-area: foto3;
-                        background-image: url(../imgs/galería/foto3.jpeg);
+                        background-image: url(../imgs/galeria/foto3.jpeg);
                     }
                     .cuadro4{
                         grid-area: foto4;
-                        background-image: url(../imgs/galería/foto4.jpeg);
+                        background-image: url(../imgs/galeria/foto4.jpeg);
                     }
                     .cuadro5{
                         grid-area: foto5;
-                        background-image: url(../imgs/galería/foto5.jpeg);
+                        background-image: url(../imgs/galeria/foto5.jpeg);
                     }
                     .cuadro6{
                         grid-area: foto6;
-                        background-image: url(../imgs/galería/foto6.jpeg);
+                        background-image: url(../imgs/galeria/foto6.jpeg);
                     }
                     .cuadro1, .cuadro2, .cuadro3, .cuadro4, .cuadro5, .cuadro6{
                         background-size: cover;
@@ -215,14 +231,11 @@ index header*/
                 
             }
         }
-
-         
     }
 
 /*hoja proyectos*/
     .intro{
-        width: 90%;
-        margin: auto;
+        @include width90 ($width90, $marginAuto);
         h1{
             @include texto ($fuente2, $amarillo, left);
             font-size: medium;
@@ -236,8 +249,7 @@ index header*/
 
 /*hoja galería*/
     #fotos{
-        width: 90%;
-        margin: auto;
+        @include width90 ($width90, $marginAuto);
         display: grid;
         grid-template-areas:"foto1 foto2"
                             "foto3 foto7"
@@ -249,34 +261,35 @@ index header*/
         column-gap: .5rem;
         justify-items: stretch;
         align-items: stretch;
-    }
-    .foto1{
+        overflow-x: hidden;
+        .foto1{
         grid-area: foto1;
+        }
+        .foto2{
+            grid-area: foto2;
+        }
+        .foto3{
+            grid-area: foto3;
+        }
+        .foto4{
+            grid-area: foto4;
+        }
+        .foto5{
+            grid-area: foto5;
+        }
+        .foto6{
+            grid-area: foto6;
+        }
+        .foto7{
+            grid-area: foto7;
+        } 
     }
-    .foto2{
-        grid-area: foto2;
-    }
-    .foto3{
-        grid-area: foto3;
-    }
-    .foto4{
-        grid-area: foto4;
-    }
-    .foto5{
-        grid-area: foto5;
-    }
-    .foto6{
-        grid-area: foto6;
-    }
-    .foto7{
-        grid-area: foto7;
-    }
+    
 
 /*hoja blog*/
     #blog{
-        width: 90%;
+        @include width90 ($width90, $marginAuto);
         height: auto;
-        margin: auto;
         background-color: $azulClaro;
         padding: 10px;
 
@@ -290,7 +303,7 @@ index header*/
         }
         .entrada{
             width: 100%;
-            margin: auto;
+            margin: $marginAuto;
             @include texto ($fuente2, $blanco, justify);
             padding: 20px;
 
@@ -314,52 +327,76 @@ index header*/
 
 /*footer*/
     footer{
-        margin: 10px 20px 10px;
+        margin: 10px 10px 0;
 
-        #cajaContacto{
+        .navbar2{
             width: 100%;
-            margin: auto;
+            margin: $marginAuto;
 
-            h2{
-                color: $amarillo;
-                font-size: 1em;
+            ul{
+                list-style-type: none;
+                display: flex;
+                padding: 0 5px;
+                justify-content: space-evenly;
             }
-            a,
-            p{
-                color: $blanco;
+            li{
+                :hover{
+                    color: $azulClaro;
+                }
+            }
+            a{
                 text-decoration: none;
-                font-size: small;
-            }
-            .navbar2,
-            .contacto,
-            .redes,
-            .derechos{
-                width: 90%;
-                margin: 5px auto;
-                font-family: $fuente1;
-                ul{
-                    list-style-type: none;
-                    display: flex;
-                    padding: 0;
-                }
-                a{
-                    text-decoration: none;
-                    padding-right: 10px;
-                    @include texto ($fuente1, $blanco, left);
-                }
-                img{
-                    margin-top: 10px;
-                    height: 50px;
-                }
-            } 
-            .derechos p{
-                float: right;
-                padding: 40px 10px;
-                font-size: xx-small;
+                padding-right: 10px;
+                @include texto ($fuente1, $amarillo, left);
             }
             
         }
-    }    
+        #cajaContacto{
+            width: 100%;
+            margin: $marginAuto;
+            display: flex;
+
+            .datosContacto{
+                width: 50%;
+                @include texto ($fuente1, $blanco, left);
+                font-size: .8rem;
+                padding: 10px 0 0 10px;
+                line-height: .2em;
+            }
+            .redes{
+                width: 60%;
+                @include texto ($fuente1, $amarillo, right);
+                padding: 10px 20px 0;
+                h2{
+                    font-size: 1rem;
+                }
+                svg{
+                    color: $blanco;
+                    margin-left: 10px;
+                    :hover{
+                        color: $azulClaro;
+                    }
+                }
+            }
+        }
+        #baseFooter{
+            display: flex;
+            .logoBajo{
+                width: 250px;
+                height: 55px;
+                margin: 10px 10px 30px;
+                background-image: url(../imgs/logoFes4.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .copyRight{
+                width: 70%;
+                @include texto ($fuente1, $blanco, right);
+                font-size: .8rem;
+                padding: 20px;
+            }
+        } 
+    }   
 
 
 /*tablet md*/
@@ -452,11 +489,10 @@ index header*/
             }
         }
         #proyectosSecundarios{
-                width: 98%;
-                margin: auto;
-                .card-body{
-                    height: 380px;
-                }
+            @include width90 ($width90, $marginAuto);
+            .card-body{
+                height: 380px;
+            }
         }
         #fotos{
             margin: 40px 4%;
@@ -473,22 +509,51 @@ index header*/
         .nosotros{
             margin-top: 40px;
         }
-        
+        footer{
+            margin: 10px 20px 0;
+            .navbar2{
+                a{
+                    font-size: medium;
+                }
+            }
+            #cajaContacto{
+                .datosContacto{
+                    padding-left: 40px;
+                    font-size: medium;
+                }
+                .redes{
+                    padding-right: 40px;
+                    h2{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            #baseFooter{
+                display: flex;
+                .logoBajo{
+                    margin-left: 40px;
+                }
+                .copyRight{
+                    padding: 40px;
+                }
+            }
+        }
     }
+        
 
 /*pc lg*/
     @media screen and (min-width: 992px){
         header{
-            width: 95%;
+            width: $width95;
             height: 550px;
 
             .cabecera{
-                width: 95%;
+                width: $width95;
                 height: 550px;
             }
             .cabeceraTexto{
                 height: 90px;
-                margin-top: 410px;
+                margin-top: 460px;
                 line-height: 0.5em;
 
                 h2{
@@ -507,6 +572,9 @@ index header*/
              }
              .offcanvas{
                  width: 350px;
+                 .offcanvas-body{
+                    margin-top: 50px; 
+                 }
              }
              .nav-item a{
                  font-size: larger;
@@ -514,7 +582,7 @@ index header*/
         }
         
         #header2{
-            width: 95%;
+            width: $width95;
             height: 100px;
             margin-top: 10px;
 
@@ -532,7 +600,7 @@ index header*/
 
         main{
             #grillaPrincipal{ 
-                width: 95%;
+                width: $width95;
                 .proyectos .card{
                     height: 450px;
                     img{
@@ -573,7 +641,7 @@ index header*/
         }
         #proyectosSecundarios{
                 width: 97%;
-                margin: auto;
+                margin: $marginAuto;
                 .card-body{
                     height: 280px;
                 }
@@ -595,34 +663,33 @@ index header*/
         
         
         footer{
+            margin: 10px 40px 0;
+            display: flex;
             #cajaContacto{
-    
-                h2{
-                    font-size: 1.2em;
-                }
-                a,
-                p{
+                .datosContacto{
+                    width: 80%;
+                    padding-left: 20px;
                     font-size: medium;
                 }
-                .navbar2,
-                .contacto,
-                .redes,
-                .derechos{
-                    img{
-                        height: 70px;
-                    }
-                    p{
-                        float: none;
-                        padding: 0;
-                        font-size: medium;
+                .redes{
+                    text-align: left;
+                    padding-right: 20px;
+                    h2{
+                        font-size: 1.2rem;
                     }
                 }
-                .derechos p{
-                    float: right;
-                    font-size: small;
-                    padding-top: 40px;
-                } 
-                
+            }
+            #baseFooter{
+                display: flex;
+                .logoBajo{
+                    margin: 30px 0;
+                    width: 180px;
+                }
+                .copyRight{
+                    width: 60%;
+                    padding: 40px 20px 0 0;
+                    text-align: left;
+                }
             }
         } 
     }   
