@@ -4,6 +4,8 @@
 *{
     margin: 0;
     border: 0;
+
+    overflow-x: hidden !important;
 }
 
 @mixin texto ($fuente, $color, $alineación){
